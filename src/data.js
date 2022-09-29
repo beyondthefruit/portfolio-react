@@ -11,12 +11,12 @@ const projectsData = [
   },
   {
     id: 2,
-    img: require('./imgs/boc.png'),
+    img: require('./imgs/boc1.png'),
     title: 'Boards of Canada webpage Javascript',
     shortTitle: 'Boards of Canada',
     desc: "Probably my favourite music band. I've made a couple of web projects on this band since I started my tech journey. Made with Javascript, Buttons are dynamic",
     skills: ['Javascript', 'HTML', 'CSS', 'Responsive Design', 'Github', 'GIT'],
-    linkWeb: 'https://booklist-app-kevin.netlify.app/',
+    linkWeb: 'https://boc-fanpage-js.netlify.app/',
     linkGit: 'https://github.com/beyondthefruit/JS-BOC-FANPAGE',
   },
   {
