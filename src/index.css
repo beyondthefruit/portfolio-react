@@ -112,7 +112,7 @@ button {
 }
 
 main {
-  width: 90vw;
+  width: 100vw;
   /* height: 400vh; */
   height: auto;
   margin: 0;
@@ -130,7 +130,9 @@ main h1 {
   main {
     /* height: 430vh; */
     height: auto;
+    margin: 0;
     width: 95vw;
+    width: 100vw;
   }
   main h1 {
     font-size: 4rem;
@@ -141,13 +143,14 @@ main h1 {
 header {
   font-family: bradley hand, cursive, sans-serif;
   background: var(--clr-platinum-clear);
-  /* border-bottom: 0.1rem solid var(--clr-platinum-clear); */
+  border-bottom: 0.05rem solid var(--clr-iceberg);
   /* border-color: (
     0.25turn,
     var(--clr-platinum-clear) 5%,
     var(--clr-bluecolumbia)
   ); */
   height: auto;
+  width: 100%;
   margin-top: 0;
   padding: 1rem 0;
   position: fixed;
@@ -156,7 +159,7 @@ header {
 }
 
 .mobile-head {
-  width: 90vw;
+  width: 95vw;
   display: flex;
 }
 
@@ -177,6 +180,7 @@ header {
 header h1 {
   font-size: 1.8rem;
   width: 90%;
+  padding-left: 1rem;
 }
 
 header li {
@@ -211,7 +215,7 @@ nav {
 .blur-me {
   right: 1rem;
   top: 3rem;
-  width: 100%;
+  width: 150vw;
   height: 100%;
   position: fixed;
   opacity: 1;
@@ -260,17 +264,19 @@ nav {
 /* w3school code */
 .tooltip .tooltip-text {
   visibility: hidden;
-  width: 10rem;
+  width: 11rem;
   background-color: var(--clr-iceberg);
   color: var(--clr-platinum);
   text-align: center;
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   border-radius: 6px;
-  padding: 5px 0;
+  padding: 0.2rem;
+  margin-left: 0.2rem;
 
   /* Position the tooltip */
   position: absolute;
-  left: 10rem;
+  left: -4rem;
+  top: 1.5rem;
   z-index: 15;
 }
 .tooltip:hover .tooltip-text {
@@ -285,7 +291,7 @@ nav {
   display: block;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 840px) {
   nav-center {
     max-width: 1170px;
     margin: 0 auto;
@@ -297,8 +303,9 @@ nav {
 
   header {
     padding: 0;
-    width: 95vw;
+    width: 100vw;
     height: 10rem;
+    /* margin-left: -2.5rem; */
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -341,7 +348,13 @@ nav {
     display: none;
   }
   .tooltip:hover .tooltip-text {
-    visibility: hidden;
+    visibility: visible;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .tooltip .tooltip-text {
+    font-size: 0.85rem;
+    width: 16rem;
   }
 }
 
@@ -368,16 +381,17 @@ nav {
   border: var(--clr-nickel) 0.05rem ridge;
   box-shadow: 4px 4px 6px var(--clr-nickel);
   border-radius: 0.25rem;
-  margin: 1rem;
-  width: 18rem;
-  height: 32rem;
+  margin: 1.5rem 0.9rem;
+  width: 16rem;
+  min-height: 30rem;
+  height: auto;
   display: flex;
   flex-direction: column;
   text-align: center;
 }
 .project img {
-  width: 260px;
-  height: 200px;
+  width: 240px;
+  height: 190px;
   border: var(--clr-nickel) 0.1rem ridge;
   display: block;
   margin: 0.5rem auto 0.4rem auto;
@@ -403,44 +417,32 @@ nav {
   color: var(--clr-black-smokey);
   box-shadow: 2px 2px 2px var(--clr-bluecolumbia);
   border-radius: 5px;
-  margin: 0.3rem 0.3rem;
+  margin: 0.3rem 0.5rem;
   padding: 0.1rem 0.3rem;
 }
 
 .project-link {
   font-size: 1.2rem;
-  color: var(--clr-iceberg);
-  height: 2rem;
-  margin: 1rem 0 0.4rem 0;
+  height: 2.5rem;
+  width: auto;
+  padding: 1rem 0;
+  margin: 1rem 0;
+  display: flex;
+  align-self: center;
 }
-.project-link a {
+.project-link p {
   color: var(--clr-charcoal);
   font-size: 1rem;
   margin-left: 0.5rem;
 }
 
-@media screen and (min-width: 600px) {
-  .project {
-    margin: 1rem;
-    width: 24rem;
-    height: 31rem;
-  }
-  .project img {
-    width: 320px;
-    height: 210px;
-    margin: 1rem auto 0.9rem auto;
-  }
-  .project h4 {
-    font-size: 1rem;
-    padding: 0.3rem 0 1rem 0;
-  }
-  .project p {
-    font-size: 0.9rem;
-    padding: 0.1rem 0.5rem;
-  }
+.project-link a {
+  color: var(--clr-iceberg);
+  font-size: 1.2rem;
+  margin: 0 0.5rem;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 840px) {
   .portfolio-projects {
     width: 95vw;
     align-items: center;
@@ -449,22 +451,49 @@ nav {
   }
 
   .project {
-    margin-left: auto;
-    margin-right: auto;
+    margin: 2rem auto;
+    width: 24rem;
+    /* margin-left: auto;
+    margin-right: auto; */
+    height: 32rem;
+  }
+
+  .project h4 {
+    font-size: 1rem;
+    padding: 0.3rem 0 1rem 0;
+  }
+  .project p {
+    font-size: 0.9rem;
+    padding: 0.1rem 0.5rem;
   }
 
   .project img {
     width: 340px;
     height: 220px;
+    margin: 1rem auto 0.9rem auto;
   }
+
   .project-link {
-    margin: 0.5rem 0 1rem;
+    margin: 1rem 0;
+    padding-bottom: 1rem;
+  }
+  .project-link a {
+    padding-bottom: 1rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .portfolio-projects {
+    width: 95vw;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 15rem;
   }
 }
 
 /* main element */
 .don-wraper {
-  margin-top: 12rem;
+  margin: 12rem 1rem 0 1rem;
 }
 
 .presentation {
@@ -500,11 +529,10 @@ nav {
 
 .underline {
   height: 0.25rem;
-  width: 100rem;
+  width: 100%;
   padding: 0 10%;
+  margin: 0 10%;
   border-radius: 12px;
-  /* background: var(--clr-charcoal); */
-  /* background: var(--clr-iceberg); */
   background: linear-gradient(
     0.25turn,
     var(--clr-nickel) 5%,
@@ -516,16 +544,11 @@ nav {
   margin-bottom: 2rem;
   display: block;
 }
-.underline-mobile {
+/* .underline-mobile {
   display: none;
-}
-
-/* .sticky-line {
-  position: sticky;
-  top: 10rem;
 } */
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 840px) {
   .presentation {
     margin-top: 15rem;
     scroll-margin-top: 160px;
@@ -541,15 +564,29 @@ nav {
   }
 }
 
+@media screen and (min-width: 1400px) {
+  .presentation img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+  }
+  .underline {
+    height: 0.35rem;
+  }
+}
+
 /* about */
 .about {
   text-align: center;
+  margin: 0 1rem;
 }
 
 .about-title {
   font-size: 1.2rem;
   margin: 1rem 1rem;
   padding: 0.5rem;
+  font-style: oblique 10deg;
+  font-weight: 500;
 }
 
 .about-text {
@@ -560,11 +597,14 @@ nav {
 .about-text-nonpro {
   padding: 0.2rem 0.5rem;
 }
-.about-text h4 {
-  padding-top: 0.5rem;
+.about-text h3 {
+  margin: 0.5rem;
 }
 .about-text a {
   color: var(--clr-charcoal);
+  margin-left: 1rem;
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
 }
 
 .about-graph {
@@ -573,8 +613,8 @@ nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  /* margin-left: auto;
-  margin-right: auto; */
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .about-graph-elements {
@@ -592,9 +632,13 @@ nav {
   font-size: 1rem;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 840px) {
   .about-graph {
     width: 90vw;
+  }
+
+  .about-text {
+    padding: 0.5rem 1rem;
   }
 
   .about-icon {
@@ -611,6 +655,14 @@ nav {
     font-size: 1.4rem;
   }
 }
+@media screen and (min-width: 1400px) {
+  .about-title {
+    font-size: 1.3rem;
+  }
+  .about-text {
+    font-size: 1rem;
+  }
+}
 
 /* skills section */
 .skills {
@@ -625,7 +677,7 @@ nav {
   font-weight: 600;
   font-size: 1.6rem;
   text-align: center;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 .skills-wrap {
@@ -756,7 +808,7 @@ nav {
 .contact a {
   font-size: 1.1rem;
   padding: 0.6rem 0 0 1rem;
-  text-decoration: none;
+  /* text-decoration: none; */
   color: var(--clr-charcoal);
 }
 .contact a:hover {
@@ -774,10 +826,9 @@ nav {
 @media screen and (min-width: 900px) {
   .contact {
     margin: 1rem;
-    margin-left: 2rem;
+    margin-left: 4rem;
   }
   .contact-me {
-    margin-left: 4rem;
     scroll-margin-top: 160px;
   }
   .contact a {

@@ -1,4 +1,6 @@
-import { FiExternalLink } from 'react-icons/fi';
+// import { FiExternalLink } from 'react-icons/fi';
+import { TbEyeCheck } from 'react-icons/tb';
+import { GiMagnifyingGlass } from 'react-icons/gi';
 
 // Everything dynamic
 
@@ -6,7 +8,8 @@ const Projects = ({ setDataProjects, dataProjects }) => {
   return (
     <div className='portfolio-projects'>
       {dataProjects.flatMap((project) => {
-        const { id, img, title, desc, skills, link, shortTitle } = project;
+        const { id, img, title, desc, skills, linkWeb, linkGit, shortTitle } =
+          project;
         return (
           <div key={id} className='project'>
             <img src={img} alt={title} />
@@ -18,8 +21,13 @@ const Projects = ({ setDataProjects, dataProjects }) => {
               })}
             </div>
             <div className='project-link'>
-              <FiExternalLink />
-              <a href={link}>{shortTitle}</a>
+              <a target='_blank' href={linkWeb}>
+                <TbEyeCheck />
+              </a>
+              <p> {shortTitle}</p>
+              <a target='_blank' href={linkGit}>
+                <GiMagnifyingGlass />
+              </a>
             </div>
           </div>
         );
