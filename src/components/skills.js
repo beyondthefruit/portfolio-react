@@ -4,7 +4,7 @@ import { FiAirplay } from 'react-icons/fi';
 const Skills = ({ dataSkills, setDataSkills }) => {
   return (
     <div className='skills'>
-      <div className='underline gradiant-line'></div>
+      <div className='underline underline-mobile'></div>
       <div className='skills-title'>Tech-skills</div>
       <div className='skills-wrap'>
         {dataSkills.map((skill) => {
@@ -57,7 +57,7 @@ const Skills = ({ dataSkills, setDataSkills }) => {
           </div>
         </div>
       </div>
-      <div className='underline gradiant-line'></div>
+      <div className='underline underline-mobile'></div>
     </div>
   );
 };

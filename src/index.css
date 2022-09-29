@@ -498,10 +498,9 @@ nav {
   font-weight: 500;
 }
 
-/* both have to check following */
 .underline {
   height: 0.25rem;
-  width: 50rem;
+  width: 100rem;
   padding: 0 10%;
   border-radius: 12px;
   /* background: var(--clr-charcoal); */
@@ -515,6 +514,10 @@ nav {
   margin-right: auto;
   margin-top: 2rem;
   margin-bottom: 2rem;
+  display: block;
+}
+.underline-mobile {
+  display: none;
 }
 
 /* .sticky-line {
