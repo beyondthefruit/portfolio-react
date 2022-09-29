@@ -1,3 +1,9 @@
+// import css from '../imgs/css.png';
+// import git from '../imgs/git.png';
+// import graphql from '../imgs/graphql.png';
+// import html from '../imgs/html.png';
+// import react from '../imgs/react.png';
+// import javascript from '../imgs/javascript.png';
 import { GiTeamUpgrade, GiTeamIdea, GiArchiveResearch } from 'react-icons/gi';
 import { FiAirplay } from 'react-icons/fi';
 
@@ -7,7 +13,7 @@ const Skills = ({ dataSkills, setDataSkills }) => {
       <div className='skills-title'>Tech-skills</div>
       <div className='skills-wrap'>
         {dataSkills.map((skill) => {
-          const { id, img, title, achieve } = skill;
+          const { id, img, title, width } = skill;
           console.log(skill);
           return (
             <div key={id} className='skills-cards'>
@@ -15,12 +21,57 @@ const Skills = ({ dataSkills, setDataSkills }) => {
               <div className='skills-cards-info'>
                 <div className='skills-card-title'>{title}</div>
                 <div className='rating'>
-                  <span className='progress' style={{ width: achieve }}></span>
+                  <span className='progress'></span>
                 </div>
               </div>
             </div>
           );
         })}
+        {/* <div className='skills-cards'>
+          <img src={react} alt='' />
+          <div className='skills-cards-info'>
+            <div className='skills-card-title'></div>
+            <div className='rating'>
+              <span className='progress'></span>
+            </div>
+          </div>
+        </div> */}
+        {/* <div className='skills-cards'>
+          <img src={css} alt='CSS' />
+          <div className='skills-cards-info'>
+            <div className='skills-card-title'>CSS3</div>
+            <div className='rating'>
+              <span className='progress'></span>
+            </div>
+          </div>
+        </div>
+        <div className='skills-cards'>
+          <img src={html} alt='HTML' />
+          <div className='skills-cards-info'>
+            <div className='skills-card-title'>HTML5</div>
+            <div className='rating'>
+              <span className='progress'></span>
+            </div>
+          </div>
+        </div>
+        <div className='skills-cards'>
+          <img src={git} alt='Github' />
+          <div className='skills-cards-info'>
+            <div className='skills-card-title'>Github</div>
+            <div className='rating'>
+              <span className='progress'></span>
+            </div>
+          </div>
+        </div>
+        <div className='skills-cards'>
+          <img src={graphql} alt='GraphQL' />
+          <div className='skills-cards-info'>
+            <div className='skills-card-title'>GraphQL</div>
+            <div className='rating'>
+              <span className='progress'></span>
+            </div>
+          </div>
+        </div> */}
       </div>
 
       <div className='skills-title'>Soft-skills</div>

@@ -17,13 +17,19 @@ const Navbar = ({ showProjects, setShowProjects }) => {
   //   const navu = document.querySelector('header');
   //   console.log(navu.clientHeight);
   // I got the height of header using this: header is 208px large screen and 68 px small screen
+  // I also use the new css  scroll-margin-top: ;
   // };
+
   // I have to follow a react router course, in the meantime I used a old school querySelector method, I'm aware that it's not the best
   const navigation = (event) => {
     const about = document.querySelector('.presentation');
     const skills = document.querySelector('.skills');
     const contact = document.querySelector('.contact-me');
     let element = event.currentTarget.text.toLowerCase();
+    // closeProjects();
+    if (showProjects) {
+      setShowProjects(!showProjects);
+    }
     if (element === 'about') {
       about.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
@@ -33,7 +39,6 @@ const Navbar = ({ showProjects, setShowProjects }) => {
     if (element === 'contact') {
       contact.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
-    // e.currentTarget.scrollIntoView({ behavior: 'smooth', block: 'center' });
   };
 
   return (

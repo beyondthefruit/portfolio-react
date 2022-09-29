@@ -1,11 +1,13 @@
+/* @import url(<linkrel='preconnect'href='https://fonts.googleapis.com'><linkrel='preconnect'href='https://fonts.gstatic.com'crossorigin><linkhref='https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap'rel='stylesheet'>) */
 /* variables */
 :root {
   --clr-black-smokey: rgba(28, 17, 10);
   --clr-charcoal: rgba(39, 62, 71);
   --clr-nickel: rgba(105, 114, 104);
   --clr-greycadet: rgba(149, 163, 164);
+  --clr-grey: rgb(186, 189, 189);
   --clr-bluecolumbia: rgb(212, 229, 235);
-  /* --clr-bluecolumbia: rgba(183, 209, 218); */
+  /* --clr-bluecolumbia: rgb(175, 205, 214); */
   --clr-iceberg: rgba(109, 174, 219);
   --clr-blue: rgba(40, 146, 215);
   --clr-redcin: rgba(220, 73, 58);
@@ -36,8 +38,9 @@
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Montserrat', sans-serif, 'Playfair Display', serif,
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+    Cantarell, 'Open Sans', 'Helvetica Neue';
   background: var(--clr-platinum);
   color: var(--clr-black-platinium);
   line-height: 1.5;
@@ -143,6 +146,7 @@ header {
   padding: 1rem;
   position: fixed;
   top: 0;
+  z-index: 4;
 }
 
 .mobile-head {
@@ -455,8 +459,6 @@ nav {
 /* main element */
 .don-wraper {
   margin-top: 15rem;
-  /* display: flex;
-  flex-direction: column; */
 }
 
 .presentation {
@@ -472,15 +474,16 @@ nav {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  /* margin-left: auto;
-  margin-right: auto; */
 }
 
 .presentation p:first-child {
   font-size: 1.2rem;
 }
 .presentation p:nth-child(2) {
-  font-size: 2.2rem;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.3rem;
 }
 .presentation p:last-child {
   font-size: 1.5rem;
@@ -498,14 +501,12 @@ nav {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
-/* check className for line etc */
-.gradientLine {
-  /* content: ""; */
-  height: 4px;
-  position: static;
-  transition: 0.2s;
-  width: 600px;
-}
+
+/* .sticky-line {
+  position: sticky;
+  top: 10rem;
+} */
+
 @media screen and (min-width: 800px) {
   .presentation {
     margin-top: 15rem;
@@ -521,32 +522,38 @@ nav {
 .about-title {
   font-size: 1.2rem;
   margin: 1rem 1rem;
+  padding: 0.5rem;
 }
 
 .about-text {
-  font-size: 1rem;
+  font-size: 0.9rem;
+  padding: 0.2rem 0.5rem;
 }
 
 .about-text-nonpro {
   padding: 0.2rem 0.5rem;
 }
-.about-text-nonpro h3 {
+.about-text h4 {
   padding-top: 0.5rem;
+}
+.about-text a {
+  color: var(--clr-charcoal);
 }
 
 .about-graph {
-  margin-top: 3rem;
+  margin-top: 5rem;
   width: 90vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto;
+  margin-right: auto; */
 }
 
 .about-graph-elements {
   padding: 0 2rem;
   width: 10rem;
+  text-align: center;
 }
 
 .about-icon {
@@ -564,12 +571,17 @@ nav {
   }
 
   .about-icon {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+  }
+  .about-graph-elements {
+    padding: 1rem 2rem;
+    width: 12rem;
   }
 
   .about-graph-elements p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -607,31 +619,49 @@ nav {
 .skills-cards img {
   width: 60px;
   height: 50px;
-  margin: 0.5rem 0.5rem 0 1rem;
+  align-self: center;
+  margin-left: 0.5rem;
   display: block;
 }
 
 .skills-logo {
-  width: 40px;
-  height: 40px;
-  margin: 0.5rem 1rem 0.5rem 0.5rem;
+  width: 60px;
+  height: 50px;
+  /* margin: 0.5rem 1rem 0.5rem 1rem; */
   align-self: center;
+  margin-left: 0.5rem;
   color: var(--clr-iceberg);
   display: block;
 }
 .skills-cards-info {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
+  margin-left: 0.3rem;
   align-self: center;
 }
 
 .skills-card-title {
   margin-left: 0.5rem;
   font-size: 1rem;
-  width: 60%;
+  padding: 0px 0 0.3rem 0.5rem;
+  position: relative;
 }
 .rating {
-  margin-left: 1rem;
+  z-index: 2;
+  width: 170px;
+  background-color: var(--clr-grey);
+  padding: 3px;
+  border-radius: 12px;
+  box-shadow: inset 0 1px 3px rgba(0.1, 0.1, 0.1, 0.1);
+}
+.progress {
+  display: block;
+  height: 16px;
+  /* width: 10%; */
+  background-color: var(--clr-iceberg);
+  border-radius: 12px;
+  transition: width 500ms ease-in-out;
 }
 
 .skills-card-desc {
