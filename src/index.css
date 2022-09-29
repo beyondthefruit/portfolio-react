@@ -140,10 +140,16 @@ main h1 {
 /* nav design */
 header {
   font-family: bradley hand, cursive, sans-serif;
-  background: var(--clr-platinum);
+  background: var(--clr-platinum-clear);
+  /* border-bottom: 0.1rem solid var(--clr-platinum-clear); */
+  /* border-color: (
+    0.25turn,
+    var(--clr-platinum-clear) 5%,
+    var(--clr-bluecolumbia)
+  ); */
   height: auto;
   margin-top: 0;
-  padding: 1rem;
+  padding: 1rem 0;
   position: fixed;
   top: 0;
   z-index: 4;
@@ -286,13 +292,13 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    padding: 1rem;
+    padding: 1rem 0;
   }
 
   header {
     padding: 0;
     width: 95vw;
-    height: 13rem;
+    height: 10rem;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -458,12 +464,12 @@ nav {
 
 /* main element */
 .don-wraper {
-  margin-top: 15rem;
+  margin-top: 12rem;
 }
 
 .presentation {
   width: 90vw;
-  margin-top: 10rem;
+  margin-top: 8rem;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -478,15 +484,18 @@ nav {
 
 .presentation p:first-child {
   font-size: 1.2rem;
+  font-weight: 500;
 }
 .presentation p:nth-child(2) {
   font-size: 3rem;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 600;
   letter-spacing: 0.3rem;
+  color: var(--clr-charcoal);
 }
 .presentation p:last-child {
   font-size: 1.5rem;
+  font-weight: 500;
 }
 
 /* both have to check following */
@@ -494,8 +503,14 @@ nav {
   height: 0.25rem;
   width: 50rem;
   padding: 0 10%;
+  border-radius: 12px;
   /* background: var(--clr-charcoal); */
-  background: var(--clr-iceberg);
+  /* background: var(--clr-iceberg); */
+  background: linear-gradient(
+    0.25turn,
+    var(--clr-nickel) 5%,
+    var(--clr-iceberg)
+  );
   margin-left: auto;
   margin-right: auto;
   margin-top: 2rem;
@@ -510,7 +525,16 @@ nav {
 @media screen and (min-width: 800px) {
   .presentation {
     margin-top: 15rem;
-    scroll-margin-top: 208px;
+    scroll-margin-top: 160px;
+  }
+  .presentation img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+  }
+
+  .underline {
+    height: 0.3rem;
   }
 }
 
@@ -595,8 +619,9 @@ nav {
 }
 
 .skills-title {
-  text-align: center;
+  font-weight: 600;
   font-size: 1.6rem;
+  text-align: center;
   padding: 1rem;
 }
 
@@ -698,7 +723,7 @@ nav {
     font-size: 0.9rem;
   }
   .skills {
-    scroll-margin-top: 208px;
+    scroll-margin-top: 160px;
   }
 }
 
@@ -713,22 +738,20 @@ nav {
 
 .contact-me h3 {
   text-align: center;
+  font-weight: 600;
   font-size: 1.6rem;
   padding: 1rem;
 }
 
 .contact {
-  /* border: var(--clr-nickel) 0.1rem solid; */
-  /* box-shadow: 4px 4px 6px var(--clr-nickel);
-  border-radius: 0.25rem; */
-  margin: 1rem;
-  width: 25rem;
+  margin: 1rem 0.3rem;
+  width: 20rem;
   height: 5rem;
   display: flex;
 }
 
 .contact a {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   padding: 0.6rem 0 0 1rem;
   text-decoration: none;
   color: var(--clr-charcoal);
@@ -746,9 +769,13 @@ nav {
 }
 
 @media screen and (min-width: 900px) {
+  .contact {
+    margin: 1rem;
+    margin-left: 2rem;
+  }
   .contact-me {
     margin-left: 4rem;
-    scroll-margin-top: 208px;
+    scroll-margin-top: 160px;
   }
   .contact a {
     padding: 0.7rem 0 0 1rem;

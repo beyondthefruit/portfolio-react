@@ -7,9 +7,6 @@ const Projects = ({ setDataProjects, dataProjects }) => {
     <div className='portfolio-projects'>
       {dataProjects.flatMap((project) => {
         const { id, img, title, desc, skills, link, shortTitle } = project;
-        console.log(project);
-        console.log(skills);
-        console.log(project.skills);
         return (
           <div key={id} className='project'>
             <img src={img} alt={title} />

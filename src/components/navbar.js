@@ -13,9 +13,10 @@ const Navbar = ({ showProjects, setShowProjects }) => {
     return setShowProjects(!showProjects);
   };
 
-  // const navHeight = () => {
-  //   const navu = document.querySelector('header');
-  //   console.log(navu.clientHeight);
+  const navHeight = () => {
+    const navu = document.querySelector('header');
+    console.log(navu.clientHeight);
+  };
   // I got the height of header using this: header is 208px large screen and 68 px small screen
   // I also use the new css  scroll-margin-top: ;
   // };
@@ -67,7 +68,7 @@ const Navbar = ({ showProjects, setShowProjects }) => {
                 onClick={(e) => {
                   toggleLinks();
                   navigation(e);
-                  // navHeight();
+                  navHeight();
                 }}
               >
                 About

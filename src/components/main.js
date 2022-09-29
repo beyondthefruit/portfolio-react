@@ -6,7 +6,7 @@ const Global = ({ showProjects, setShowProjects }) => {
         <img src={poilo} alt='This is me' />
         <div className='sticky-line underline gradiant-line'></div>
         <div className='presentation-text'>
-          <p>Hey I'm</p>
+          <p>Hey! I'm</p>
           <p>Kevin</p>
           <p>I am a developer</p>
         </div>
