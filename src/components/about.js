@@ -7,7 +7,7 @@ import {
   GiMusicalNotes,
   GiMeditation,
 } from 'react-icons/gi';
-import { AiOutlineCode } from 'react-icons/ai';
+
 import { GrDocumentDownload } from 'react-icons/gr';
 
 const About = () => {
@@ -22,11 +22,12 @@ const About = () => {
         development and am actively looking for a job.
         <div className='about-title'>How did I learn?</div>
         <div className='about-text-nonpro'>
-          <p>Mainly by following online courses and building my own projects</p>
+          <p>
+            Mainly by following online courses and building my own projects.
+          </p>
           <p>
             I've started learning during Covid-lockdown spent 5 months on HTML,
-            CSS, Javascript and Jquery, I should have check for Jquery :) then
-            had to find a job to pay the bill.
+            CSS, Javascript and Jquery then had to find a job to pay the bill.
           </p>
           <p>
             Since February I'm back to full time learning, I've completed a
@@ -34,6 +35,11 @@ const About = () => {
             and have followed youtube videos. Of course, following a course
             don't make you a web developer, the best way to learn is by building
             your own projects and it's what I'm currently doing.
+          </p>
+          <p>
+            Since I started to build my project I've gained confidence in my
+            coding skills through practice. Now, more than ever I know that I
+            want to work as a developer.
           </p>
         </div>
         <div className='about-title'>And when I'm not coding?</div>
@@ -77,7 +83,7 @@ const About = () => {
         </div>
         <div className='about-graph-elements'>
           <GiMusicalNotes className='about-icon' />
-          <p>Listening</p>
+          <p>Music</p>
         </div>
         <div className='about-graph-elements'>
           <GiCook className='about-icon' />

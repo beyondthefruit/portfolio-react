@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from 'react';
+import { useState } from 'react';
 import { FaBars, FaHouseUser } from 'react-icons/fa';
 import { AiFillFolderOpen } from 'react-icons/ai';
 
@@ -108,7 +108,7 @@ const Navbar = ({ showProjects, setShowProjects }) => {
                 >
                   <AiFillFolderOpen />
                   <span class='tooltip-text'>
-                    If you want to look into my projects
+                    If you want to have a look on my projects
                   </span>
                 </button>
                 <button

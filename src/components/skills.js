@@ -12,10 +12,11 @@ const Skills = ({ dataSkills, setDataSkills }) => {
           // console.log(skill);
           return (
             <div key={id} className='skills-cards'>
-              <img src={img} alt='' />
+              <img src={img} alt={title} />
               <div className='skills-cards-info'>
                 <div className='skills-card-title'>{title}</div>
                 <div className='rating'>
+                  {/* width of progress bar passed from the data */}
                   <span className='progress' style={{ width: achieve }}></span>
                 </div>
               </div>

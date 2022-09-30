@@ -354,7 +354,7 @@ nav {
 @media screen and (min-width: 1400px) {
   .tooltip .tooltip-text {
     font-size: 0.85rem;
-    width: 16rem;
+    width: 18rem;
   }
 }
 
@@ -440,6 +440,7 @@ nav {
   color: var(--clr-iceberg);
   font-size: 1.2rem;
   margin: 0 0.5rem;
+  margin-bottom: 1rem;
 }
 
 @media screen and (min-width: 840px) {
@@ -453,9 +454,9 @@ nav {
   .project {
     margin: 2rem auto;
     width: 24rem;
-    /* margin-left: auto;
-    margin-right: auto; */
+
     height: 32rem;
+    max-height: auto;
   }
 
   .project h4 {
@@ -468,17 +469,18 @@ nav {
   }
 
   .project img {
-    width: 340px;
-    height: 220px;
+    min-width: 320px;
+    min-height: 200px;
     margin: 1rem auto 0.9rem auto;
   }
 
   .project-link {
-    margin: 1rem 0;
+    margin: 0.3rem 0;
     padding-bottom: 1rem;
   }
   .project-link a {
     padding-bottom: 1rem;
+    font-size: 1.4rem;
   }
 }
 

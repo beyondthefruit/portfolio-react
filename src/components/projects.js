@@ -1,8 +1,8 @@
-// import { FiExternalLink } from 'react-icons/fi';
-import { TbEyeCheck } from 'react-icons/tb';
-import { GiMagnifyingGlass } from 'react-icons/gi';
+import { FiExternalLink } from 'react-icons/fi';
+import { AiOutlineGithub } from 'react-icons/ai';
+// import { GiMagnifyingGlass } from 'react-icons/gi';
 
-// Everything dynamic
+//  dynamic
 
 const Projects = ({ setDataProjects, dataProjects }) => {
   return (
@@ -22,11 +22,11 @@ const Projects = ({ setDataProjects, dataProjects }) => {
             </div>
             <div className='project-link'>
               <a target='_blank' href={linkWeb}>
-                <TbEyeCheck />
+                <FiExternalLink />
               </a>
               <p> {shortTitle}</p>
               <a target='_blank' href={linkGit}>
-                <GiMagnifyingGlass />
+                <AiOutlineGithub />
               </a>
             </div>
           </div>
