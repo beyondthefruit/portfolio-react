@@ -64,7 +64,7 @@ const About = () => {
           If you want to know more about my experience, here is my resume
           <a
             target='_blank'
-            href='https://www.canva.com/design/DAFNYJDgxoM/7BZptxfUGpUAIKlpibjq7w/view?utm_content=DAFNYJDgxoM&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink#1'
+            href='https://www.canva.com/design/DAFNYJDgxoM/7BZptxfUGpUAIKlpibjq7w/view?utm_content=DAFNYJDgxoM&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink'
           >
             <GrDocumentDownload />
           </a>
