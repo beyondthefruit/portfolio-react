@@ -27,25 +27,25 @@ const About = () => {
           </p>
           <p>
             I've started learning during Covid-lockdown spent 5 months on HTML,
-            CSS, Javascript and Jquery then had to find a job to pay the bill.
+            CSS, Javascript and jQuery then had to find a job to pay the bill.
           </p>
           <p>
             Since February I'm back to full time learning, I've completed a
             Javascript course, I'm in the process of completing a react course
-            and have followed youtube videos. Of course, following a course
-            don't make you a web developer, the best way to learn is by building
-            your own projects and it's what I'm currently doing.
+            and have followed youtube videos. Of course, following courses don't
+            make you a web developer, the best way to learn is by building your
+            own projects and it's what I'm currently doing.
           </p>
           <p>
             Since I started to build my project I've gained confidence in my
-            coding skills through practice. Now, more than ever I know that I
-            want to work as a developer.
+            coding skills through practice. Now, more than ever I know that I'm
+            passionate and want to work as a developer.
           </p>
         </div>
         <div className='about-title'>And when I'm not coding?</div>
         <div className='about-text-nonpro'>
           <p>
-            I love hiking and walking. I have done a couple of multi-days hikes.
+            I love hiking and walking. I have done a couple of multi-day hikes.
             the most recent one was the Thorsnborne Trail on Hinchinbrook
             Island.
           </p>
@@ -61,9 +61,11 @@ const About = () => {
           </p>
         </div>
         <h4>
-          If you want to know more about my experience, please download my
-          resume
-          <a href=''>
+          If you want to know more about my experience, here is my resume
+          <a
+            target='_blank'
+            href='https://www.canva.com/design/DAFNYJDgxoM/7BZptxfUGpUAIKlpibjq7w/view?utm_content=DAFNYJDgxoM&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink#1'
+          >
             <GrDocumentDownload />
           </a>
         </h4>
