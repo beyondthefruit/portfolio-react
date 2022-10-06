@@ -1,9 +1,9 @@
-import poilo from '../imgs/poilo.png';
+import poiloo from '../imgs/poilo.jpg';
 const Global = ({ showProjects, setShowProjects }) => {
   return (
     <div className='don-wrapper'>
       <div className='presentation'>
-        <img src={poilo} alt='This is me' />
+        <img src={poiloo} alt='This is me' />
         <div className='sticky-line underline gradiant-line'></div>
         <div className='presentation-text'>
           <p>Hey! I'm</p>
