@@ -6,7 +6,7 @@ Everything is dynamic! I have 2 data files, one for my skills the second one for
 
 ### `App`
 
-Not super exciting. This was the first component I started to work on.
+Not super exciting. This was the first component I started to work on. SOme useState.
 
 ### `Navbar`
 

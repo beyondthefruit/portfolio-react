@@ -47,6 +47,12 @@ const skills = [
     title: 'FIGMA',
     achieve: '30%',
   },
+  {
+    id: 9,
+    img: require('./imgs/styled.png'),
+    title: 'Styled-components',
+    achieve: '40%',
+  },
 ];
 
 export default skills;
