@@ -82,7 +82,7 @@ const projectsData = [
       'Github',
       'GIT',
     ],
-    linkWeb: 'https://github.com/julianoiret/playlist-react',
+    linkWeb: 'https://react-playlist.netlify.app/',
     linkGit: 'https://github.com/julianoiret/playlist-react',
   },
   {
