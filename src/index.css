@@ -264,7 +264,7 @@ nav {
 /* w3school code */
 .tooltip .tooltip-text {
   visibility: hidden;
-  width: 11rem;
+  width: 13rem;
   background-color: var(--clr-iceberg);
   color: var(--clr-platinum);
   text-align: center;
