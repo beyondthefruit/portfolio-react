@@ -49,7 +49,7 @@ const skills = [
   },
   {
     id: 9,
-    img: require('./imgs/styled.png'),
+    img: require('./imgs/styledcomponent.png'),
     title: 'Styled-components',
     achieve: '40%',
   },
