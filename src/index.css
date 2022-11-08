@@ -507,6 +507,11 @@ nav {
     padding-bottom: 1rem;
     font-size: 1.4rem;
   }
+  .project-link p {
+    font-size: 1.1rem;
+
+    letter-spacing: 1px;
+  }
 }
 
 @media screen and (min-width: 1400px) {
