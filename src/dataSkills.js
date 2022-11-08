@@ -38,7 +38,7 @@ const skills = [
   {
     id: 7,
     img: require('./imgs/graphql.png'),
-    title: 'GraphQl',
+    title: 'GraphQL',
     achieve: '40%',
   },
   {
