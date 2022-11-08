@@ -14,10 +14,10 @@ const Projects = ({ setDataProjects, dataProjects }) => {
           <div key={id} className='project'>
             <img src={img} alt={title} />
             <h4 className='project-title'>{title}</h4>
-            <p>{desc}</p>
+            <div className='project-description'>{desc}</div>
             <div className='project-skills'>
               {skills.map((skill) => {
-                return <p>{skill}</p>;
+                return <p className='icon-skills'>{skill}</p>;
               })}
             </div>
             <div className='project-link'>

@@ -95,5 +95,25 @@ const projectsData = [
     linkWeb: 'https://basic-frontend-challenge-beyond.netlify.app/',
     linkGit: 'https://github.com/beyondthefruit/social-profile-card-challenge',
   },
+  {
+    id: 10,
+    img: require('./imgs/catstronaut.png'),
+    title: 'Catstronaut Space Academy',
+    shortTitle: 'Catstronaut',
+    desc: 'Full-stack project Apollo GrahQl, part of the certification Graph Developer Associate',
+    skills: ['Apollo GraphQL', 'React Js'],
+    linkWeb: 'https://catstronauts--client-kevin.herokuapp.com/',
+    linkGit: 'https://github.com/beyondthefruit/odyssey-lift-off-part5-server',
+  },
+  {
+    id: 11,
+    img: require('./imgs/portfolio.png'),
+    title: 'Portfolio',
+    shortTitle: 'Portfolio',
+    desc: 'My own portfolio from scratch',
+    skills: ['React Js', 'CSS', 'Responsive Design', 'Github', 'GIT'],
+    linkWeb: 'https://catstronauts--client-kevin.herokuapp.com/',
+    linkGit: 'https://github.com/beyondthefruit/portfolio-react',
+  },
 ];
 export default projectsData;

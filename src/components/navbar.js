@@ -108,7 +108,7 @@ const Navbar = ({ showProjects, setShowProjects }) => {
                 >
                   <AiFillFolderOpen />
                   <span class='tooltip-text'>
-                    If you want to have a look on my projects
+                    If you want to have a look at my projects
                   </span>
                 </button>
                 <button

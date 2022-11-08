@@ -1,4 +1,4 @@
-import poiloo from '../imgs/poilo.png';
+import poiloo from '../imgs/poiloo.jpg';
 const Global = ({ showProjects, setShowProjects }) => {
   return (
     <div className='don-wrapper'>
