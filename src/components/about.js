@@ -44,7 +44,7 @@ const About = ({ showProjects, setShowProjects, toggleLinks }) => {
             passionate and want to work as a developer.
           </p>
           <div className='about-project-link'>
-            <p>Check my projects here</p>
+            <h5>Check my projects here</h5>
             <BsBoxArrowRight />
             <button
               className={`about-btn-project ${
