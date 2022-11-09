@@ -641,6 +641,27 @@ nav {
   font-size: 1.5rem;
   margin-top: 0.5rem;
 }
+.about-project-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0;
+  margin-right: 0;
+  width: 90%;
+}
+.about-project-link h5 {
+  margin-right: 0.3rem;
+}
+.about-btn-project {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin-right: 0;
+}
+.about-btn-project:hover {
+  color: var(--clr-iceberg);
+}
 
 .about-graph {
   margin-top: 5rem;

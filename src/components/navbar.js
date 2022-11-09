@@ -1,18 +1,14 @@
 import { useState } from 'react';
 import { FaBars, FaHouseUser } from 'react-icons/fa';
-import { AiFillFolderOpen } from 'react-icons/ai';
 
-const Navbar = ({ showProjects, setShowProjects }) => {
-  const [showLinks, setShowLinks] = useState(true);
-
-  // both these fct are to toggle purposes (projects and links)
-  const toggleLinks = () => {
-    return setShowLinks(!showLinks);
-  };
-  const toggleProjects = () => {
-    return setShowProjects(!showProjects);
-  };
-
+const Navbar = ({
+  showProjects,
+  setShowProjects,
+  toggleLinks,
+  toggleProjects,
+  showLinks,
+  setShowLinks,
+}) => {
   // const navHeight = () => {
   //   const navu = document.querySelector('header');
   //   console.log(navu.clientHeight);

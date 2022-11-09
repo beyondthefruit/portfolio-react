@@ -14,10 +14,26 @@ function App() {
   const [showProjects, setShowProjects] = useState(false);
   const [dataSkills, setDataSkills] = useState(skills);
   const [dataProjects, setDataProjects] = useState(projectsData);
+  const [showLinks, setShowLinks] = useState(true);
+
+  // both these fct are to toggle purposes (projects and links)
+  const toggleLinks = () => {
+    return setShowLinks(!showLinks);
+  };
+  const toggleProjects = () => {
+    return setShowProjects(!showProjects);
+  };
   return (
     <main>
       {/* see pain palette idea with cursor brush if possible, on click change color etc */}
-      <Navbar showProjects={showProjects} setShowProjects={setShowProjects} />
+      <Navbar
+        showProjects={showProjects}
+        setShowProjects={setShowProjects}
+        toggleLinks={toggleLinks}
+        toggleProjects={toggleProjects}
+        showLinks={showLinks}
+        setShowLinks={setShowLinks}
+      />
       <div className={` ${showProjects ? 'projects' : 'inactive'}`}>
         <Projects
           setDataProjects={setDataProjects}
@@ -26,7 +42,11 @@ function App() {
       </div>
       <div className={` ${showProjects ? 'me' : null}`}>
         <Global showProjects={showProjects} setShowProjects={setShowProjects} />
-        <About />
+        <About
+          showProjects={showProjects}
+          setShowProjects={setShowProjects}
+          toggleLinks={toggleLinks}
+        />
         <Skills dataSkills={dataSkills} setDataSkills={setDataSkills} />
         <Contact />
       </div>

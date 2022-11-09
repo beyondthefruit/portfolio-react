@@ -7,10 +7,12 @@ import {
   GiMusicalNotes,
   GiMeditation,
 } from 'react-icons/gi';
+import { AiFillFolderOpen } from 'react-icons/ai';
+import { BsBoxArrowRight } from 'react-icons/bs';
 
 import { GrDocumentDownload } from 'react-icons/gr';
 
-const About = () => {
+const About = ({ showProjects, setShowProjects, toggleLinks }) => {
   return (
     <div className='about'>
       <div className='about-title'>
@@ -41,6 +43,21 @@ const About = () => {
             coding skills through practice. Now, more than ever I know that I'm
             passionate and want to work as a developer.
           </p>
+          <div className='about-project-link'>
+            <h5>Check my projects here</h5>
+            <BsBoxArrowRight />
+            <button
+              className={`about-btn-project ${
+                showProjects ? 'btn-hide' : 'btn-show'
+              }`}
+              onClick={() => {
+                setShowProjects(!showProjects);
+                toggleLinks();
+              }}
+            >
+              <AiFillFolderOpen />
+            </button>
+          </div>
         </div>
         <div className='about-title'>And when I'm not coding?</div>
         <div className='about-text-nonpro'>
