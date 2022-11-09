@@ -245,6 +245,7 @@ nav {
 
 .btn-project,
 .btn-profile {
+  display: flex;
   border: none;
   background: none;
   cursor: pointer;
@@ -266,7 +267,8 @@ nav {
 /* w3school code */
 .tooltip .tooltip-text {
   visibility: hidden;
-  width: 12rem;
+  font-family: 'Montserrat', sans-serif, 'Playfair Display', serif;
+  width: 18rem;
   background-color: var(--clr-bluecolumbia);
   border: 0.5px solid var(--clr-iceberg);
   color: var(--clr-black-smokey);
@@ -278,8 +280,8 @@ nav {
 
   /* Position the tooltip */
   position: absolute;
-  left: -4rem;
-  top: 1.5rem;
+  left: -7rem;
+  top: 2.5rem;
   z-index: 15;
 }
 .tooltip:hover .tooltip-text {
@@ -307,7 +309,7 @@ nav {
   header {
     padding: 0;
     width: 100vw;
-    height: 10rem;
+    height: 11rem;
     /* margin-left: -2.5rem; */
     align-items: center;
     display: flex;
@@ -356,8 +358,8 @@ nav {
 }
 @media screen and (min-width: 1400px) {
   .tooltip .tooltip-text {
-    font-size: 0.75rem;
-    width: 17rem;
+    font-size: 0.6rem;
+    width: 30rem;
   }
 }
 

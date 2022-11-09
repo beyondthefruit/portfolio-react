@@ -61,6 +61,66 @@ const Navbar = ({ showProjects, setShowProjects }) => {
           {/* <nav className={`nav ${showLinks ? 'show-container' : ''}`}> */}
           <ul className='links'>
             <li>
+              <a
+                className={`nav-items btn-project tooltip ${
+                  showProjects ? 'btn-hide' : 'btn-show'
+                }`}
+                onClick={() => {
+                  setShowProjects(!showProjects);
+                  toggleLinks();
+                }}
+              >
+                {/* <AiFillFolderOpen /> Projects */}
+                Projects
+                <span class='tooltip-text'>To have a look at my projects</span>
+              </a>
+              <a
+                className={`nav-items btn-profile tooltip ${
+                  showProjects ? 'btn-show' : 'btn-hide'
+                }`}
+                onClick={() => {
+                  toggleProjects();
+                  toggleLinks();
+                }}
+              >
+                <FaHouseUser />
+
+                <span class='tooltip-text'>To return on my website</span>
+              </a>
+              {/* <a className='nav-items'>
+                Projects
+                <button
+                  className={`btn-project tooltip ${
+                    showProjects ? 'btn-hide' : 'btn-show'
+                  }`}
+                  onClick={() => {
+                    setShowProjects(!showProjects);
+                    toggleLinks();
+                  }}
+                >
+                  <AiFillFolderOpen />
+                  <span class='tooltip-text'>
+                    If you want to have a look at my projects
+                  </span>
+                </button>
+                <button
+                  className={`btn-profile tooltip ${
+                    showProjects ? 'btn-show' : 'btn-hide'
+                  }`}
+                  onClick={() => {
+                    toggleProjects();
+                    toggleLinks();
+                  }}
+                >
+                  <FaHouseUser />
+                  <span class='tooltip-text'>
+                    Feel free to return on my website
+                  </span>
+                </button>
+              </a> */}
+            </li>
+
+            <li>
               {/* second onClick method with using a fct */}
               <a
                 className='nav-items'
@@ -95,38 +155,7 @@ const Navbar = ({ showProjects, setShowProjects }) => {
                 Contact
               </a>
             </li>
-            <li>
-              <a className='nav-items'>
-                <button
-                  className={`btn-project tooltip ${
-                    showProjects ? 'btn-hide' : 'btn-show'
-                  }`}
-                  onClick={() => {
-                    setShowProjects(!showProjects);
-                    toggleLinks();
-                  }}
-                >
-                  <AiFillFolderOpen />
-                  <span class='tooltip-text'>
-                    If you want to have a look at my projects
-                  </span>
-                </button>
-                <button
-                  className={`btn-profile tooltip ${
-                    showProjects ? 'btn-show' : 'btn-hide'
-                  }`}
-                  onClick={() => {
-                    toggleProjects();
-                    toggleLinks();
-                  }}
-                >
-                  <FaHouseUser />
-                  <span class='tooltip-text'>
-                    Feel free to return on my website
-                  </span>
-                </button>
-              </a>
-            </li>
+
             <button className='nav-toggle'></button>
           </ul>
         </nav>
