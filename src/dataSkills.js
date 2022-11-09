@@ -3,19 +3,19 @@ const skills = [
     id: 1,
     img: require('./imgs/javascript.png'),
     title: 'Javascript',
-    achieve: '85%',
+    achieve: '90%',
   },
   {
     id: 2,
     img: require('./imgs/react.png'),
     title: 'React JS',
-    achieve: '80%',
+    achieve: '85%',
   },
   {
     id: 3,
     img: require('./imgs/css3.png'),
     title: 'CSS',
-    achieve: '85%',
+    achieve: '90%',
   },
   {
     id: 4,
@@ -51,7 +51,7 @@ const skills = [
     id: 9,
     img: require('./imgs/styledcomponent.png'),
     title: 'Styled-components',
-    achieve: '75%',
+    achieve: '85%',
   },
 ];
 
