@@ -77,10 +77,11 @@ const projectsData = [
     desc: 'Project built in pair programming with a software developer. I used Styled components for this project',
     skills: [
       'React Js',
-      'Styled-components',
+      'styled-components',
       'Responsive Design',
       'Github',
       'GIT',
+      'Testing Library',
     ],
     linkWeb: 'https://react-playlist.netlify.app/',
     linkGit: 'https://github.com/julianoiret/playlist-react',

@@ -50,13 +50,13 @@ const skills = [
   {
     id: 9,
     img: require('./imgs/styledcomponent.png'),
-    title: 'Styled-components',
+    title: 'styled-components',
     achieve: '85%',
   },
   {
     id: 10,
     img: require('./imgs/testing.png'),
-    title: 'Testing-library',
+    title: 'Testing Library',
     achieve: '50%',
   },
 ];

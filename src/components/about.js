@@ -81,7 +81,7 @@ const About = ({ showProjects, setShowProjects, toggleLinks }) => {
           If you want to know more about my experience, here is my resume
           <a
             target='_blank'
-            href='https://www.canva.com/design/DAFNYJDgxoM/7BZptxfUGpUAIKlpibjq7w/view?utm_content=DAFNYJDgxoM&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink'
+            href='https://www.canva.com/design/DAFQ3e473PM/Kfp-nKfOOXYK97iCNjfZrQ/view?utm_content=DAFQ3e473PM&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink'
           >
             <GrDocumentDownload />
           </a>
