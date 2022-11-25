@@ -63,7 +63,7 @@ const skills = [
     id: 11,
     img: require('./imgs/ts.png'),
     title: 'Typescript',
-    achieve: '25%',
+    achieve: '35%',
   },
 ];
 
