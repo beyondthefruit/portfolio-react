@@ -41,6 +41,16 @@ COntact information with link
 [V] Test manually using developers tools - Firefox/Chrome
 [V] Test Media Querries - Ipad - Iphone SE/Pro/PRO MAX/MINI - Galaxy Note 20/S20
 
+## 🪄 Performance
+
+- For a full performance report https://www.webpagetest.org/result/221130_BiDcFF_1N6/
+- First Byte: 0.318s
+- Start Render: 0.900s
+- Speed Index: 0.934s
+- LCP: 1.518s
+- CLS: 0
+- Total Bytes: 446kb
+
 ### `Media Querries`
 
 @media screen and (min-width: 650px)
