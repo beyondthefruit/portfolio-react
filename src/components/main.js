@@ -1,5 +1,5 @@
 import poiloo from '../imgs/poilofinal.jpg';
-const Global = ({ showProjects, setShowProjects }) => {
+const Global = () => {
   return (
     <div className='don-wrapper'>
       <div className='presentation'>

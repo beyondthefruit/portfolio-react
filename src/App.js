@@ -35,19 +35,16 @@ function App() {
         setShowLinks={setShowLinks}
       />
       <div className={` ${showProjects ? 'projects' : 'inactive'}`}>
-        <Projects
-          setDataProjects={setDataProjects}
-          dataProjects={dataProjects}
-        />
+        <Projects dataProjects={dataProjects} />
       </div>
       <div className={` ${showProjects ? 'me' : null}`}>
-        <Global showProjects={showProjects} setShowProjects={setShowProjects} />
+        <Global />
         <About
           showProjects={showProjects}
           setShowProjects={setShowProjects}
           toggleLinks={toggleLinks}
         />
-        <Skills dataSkills={dataSkills} setDataSkills={setDataSkills} />
+        <Skills dataSkills={dataSkills} />
         <Contact />
       </div>
     </main>

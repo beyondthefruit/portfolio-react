@@ -1,10 +1,9 @@
 import { GiTeamUpgrade, GiTeamIdea, GiArchiveResearch } from 'react-icons/gi';
 import { FiAirplay } from 'react-icons/fi';
 
-const Skills = ({ dataSkills, setDataSkills }) => {
+const Skills = ({ dataSkills }) => {
   return (
     <div className='skills'>
-      {/* <div className='underline underline-mobile'></div> */}
       <div className='skills-title'>Tech-skills</div>
       <div className='skills-wrap'>
         {dataSkills.map((skill) => {
@@ -58,7 +57,6 @@ const Skills = ({ dataSkills, setDataSkills }) => {
           </div>
         </div>
       </div>
-      {/* <div className='underline underline-mobile'></div> */}
     </div>
   );
 };

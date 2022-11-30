@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { FaBars, FaHouseUser } from 'react-icons/fa';
 
 const Navbar = ({
@@ -9,13 +8,6 @@ const Navbar = ({
   showLinks,
   setShowLinks,
 }) => {
-  // const navHeight = () => {
-  //   const navu = document.querySelector('header');
-  //   console.log(navu.clientHeight);
-  // };
-  // I got the height of header using this: header is 160px large screen and 68 px small screen
-  // I also use the new css  scroll-margin-top: ;
-
   // I have to follow a react router course, in the meantime I used a old school querySelector method, I'm aware that it's not the best
   const navigation = (event) => {
     const about = document.querySelector('.presentation');
@@ -54,7 +46,6 @@ const Navbar = ({
         {/* ternary operator, if true we use 2 classes nav 
         and show-container, if false only nav */}
         <nav className={` ${showLinks ? 'nav show-container' : 'nav'}`}>
-          {/* <nav className={`nav ${showLinks ? 'show-container' : ''}`}> */}
           <ul className='links'>
             <li>
               <a
@@ -83,47 +74,14 @@ const Navbar = ({
 
                 <span class='tooltip-text'>To return on my website</span>
               </a>
-              {/* <a className='nav-items'>
-                Projects
-                <button
-                  className={`btn-project tooltip ${
-                    showProjects ? 'btn-hide' : 'btn-show'
-                  }`}
-                  onClick={() => {
-                    setShowProjects(!showProjects);
-                    toggleLinks();
-                  }}
-                >
-                  <AiFillFolderOpen />
-                  <span class='tooltip-text'>
-                    If you want to have a look at my projects
-                  </span>
-                </button>
-                <button
-                  className={`btn-profile tooltip ${
-                    showProjects ? 'btn-show' : 'btn-hide'
-                  }`}
-                  onClick={() => {
-                    toggleProjects();
-                    toggleLinks();
-                  }}
-                >
-                  <FaHouseUser />
-                  <span class='tooltip-text'>
-                    Feel free to return on my website
-                  </span>
-                </button>
-              </a> */}
             </li>
 
             <li>
-              {/* second onClick method with using a fct */}
               <a
                 className='nav-items'
                 onClick={(e) => {
                   toggleLinks();
                   navigation(e);
-                  // navHeight();
                 }}
               >
                 About
