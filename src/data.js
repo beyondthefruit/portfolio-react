@@ -1,7 +1,7 @@
 const projectsData = [
   {
     id: 1,
-    img: require('./imgs/book.png'),
+    img: require('./imgs/book.jpg'),
     title: 'Book lists review React App',
     shortTitle: 'Book lists',
     desc: 'My first React App, created fron scratch. This is my own book lists with my own review. I included various functionalities, everything is dynamic (star ratings, buttons choice by genres or authors...)',
@@ -11,7 +11,7 @@ const projectsData = [
   },
   {
     id: 2,
-    img: require('./imgs/boc1.png'),
+    img: require('./imgs/boc1.jpg'),
     title: 'Boards of Canada webpage Javascript',
     shortTitle: 'Boards of Canada',
     desc: "Probably my favourite music band. I've made a couple of web projects on this band since I started my tech journey. Made with Javascript, Buttons are dynamic",
@@ -21,7 +21,7 @@ const projectsData = [
   },
   {
     id: 3,
-    img: require('./imgs/darkmode.png'),
+    img: require('./imgs/darkmode.jpg'),
     title: 'Simple dark mode',
     shortTitle: 'Dark mode',
     desc: 'Quick project built during my Javascript course',
@@ -31,7 +31,7 @@ const projectsData = [
   },
   {
     id: 4,
-    img: require('./imgs/menu.png'),
+    img: require('./imgs/menu.jpg'),
     title: 'Restaurant menu Javascript',
     shortTitle: 'Menu',
     desc: 'Project built during my Javascript course, buttons are dynamic',
@@ -41,7 +41,7 @@ const projectsData = [
   },
   {
     id: 5,
-    img: require('./imgs/tours.png'),
+    img: require('./imgs/tours.jpg'),
     title: 'Travel tours React',
     shortTitle: 'Tours',
     desc: 'Project built during my react course. Many functionalities (buttons show more, delete specific tours)',
@@ -51,7 +51,7 @@ const projectsData = [
   },
   {
     id: 6,
-    img: require('./imgs/reviews.png'),
+    img: require('./imgs/reviews.jpg'),
     title: 'Reviews React',
     shortTitle: 'Reviews',
     desc: 'Project built during my react course. Buttons to display next and previous reviews, random reviews etc',
@@ -61,7 +61,7 @@ const projectsData = [
   },
   {
     id: 7,
-    img: require('./imgs/menu.png'),
+    img: require('./imgs/menu.jpg'),
     title: 'Restaurant menu React',
     shortTitle: 'Menu',
     desc: 'Project built during my React course, buttons are dynamic. Similar to the Javascript project but using react',
@@ -71,7 +71,7 @@ const projectsData = [
   },
   {
     id: 8,
-    img: require('./imgs/playlist.png'),
+    img: require('./imgs/playlist.jpg'),
     title: 'Playlist React App',
     shortTitle: 'Playlist',
     desc: 'Project built in pair programming with a software developer. I used Styled components for this project',
@@ -88,7 +88,7 @@ const projectsData = [
   },
   {
     id: 9,
-    img: require('./imgs/profile.png'),
+    img: require('./imgs/profile.jpg'),
     title: 'Basic front end challenge',
     shortTitle: 'Profile card',
     desc: 'Front end challenge. I used SCSS for this project',
@@ -98,7 +98,7 @@ const projectsData = [
   },
   {
     id: 10,
-    img: require('./imgs/catstronaut.png'),
+    img: require('./imgs/catstronaut.jpg'),
     title: 'Catstronaut Space Academy',
     shortTitle: 'Catstronaut',
     desc: 'Full-stack project Apollo GrahQL, part of the certification Graph Developer Associate',
@@ -108,7 +108,7 @@ const projectsData = [
   },
   {
     id: 11,
-    img: require('./imgs/portfolio.png'),
+    img: require('./imgs/portfolio.jpg'),
     title: 'Portfolio',
     shortTitle: 'Portfolio',
     desc: 'My own portfolio from scratch, include most of my projects',
