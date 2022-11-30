@@ -1,10 +1,7 @@
 import { FiExternalLink } from 'react-icons/fi';
 import { AiOutlineGithub } from 'react-icons/ai';
-// import { GiMagnifyingGlass } from 'react-icons/gi';
 
-//  dynamic
-
-const Projects = ({ setDataProjects, dataProjects }) => {
+const Projects = ({ dataProjects }) => {
   return (
     <div className='portfolio-projects'>
       {dataProjects.flatMap((project) => {
