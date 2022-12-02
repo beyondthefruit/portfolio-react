@@ -36,7 +36,8 @@ const About = ({ showProjects, setShowProjects, toggleLinks }) => {
             Javascript course, I'm in the process of completing a react course
             and have followed youtube videos. Of course, following courses don't
             make you a web developer, the best way to learn is by building your
-            own projects and it's what I'm currently doing.
+            own projects and it's what I'm currently doing. I've recently
+            obtained a Javascript and a GraphQL certifications.
           </p>
           <p>
             Since I started to build my project I've gained confidence in my
