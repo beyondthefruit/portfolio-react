@@ -311,7 +311,6 @@ nav {
     padding: 0;
     width: 100vw;
     height: 11rem;
-    /* margin-left: -2.5rem; */
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -503,7 +502,6 @@ nav {
   }
 
   .project-link {
-    /* margin: 0.3rem 0; */
     padding-bottom: 1rem;
   }
   .project-link a {
