@@ -73,7 +73,7 @@ const About = ({ showProjects, setShowProjects, toggleLinks }) => {
           </p>
           <p>
             I love to learn new things. I read a lot on almost every topics,
-            from science to politics and technology. And I love history,
+            from science to politics and new technology. And I love history,
             particularly Roman, Greeks, Middle Ages, Napoleon, and the World
             Wars.
           </p>

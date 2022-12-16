@@ -33,7 +33,7 @@ const skills = [
     id: 6,
     img: require('./imgs/github.png'),
     title: 'Github',
-    achieve: '65%',
+    achieve: '70%',
   },
   {
     id: 7,
@@ -64,6 +64,12 @@ const skills = [
     img: require('./imgs/ts.png'),
     title: 'Typescript',
     achieve: '35%',
+  },
+  {
+    id: 12,
+    img: require('./imgs/aws.png'),
+    title: 'AWS',
+    achieve: '30%',
   },
 ];
 
