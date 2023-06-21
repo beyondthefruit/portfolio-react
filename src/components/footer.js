@@ -18,7 +18,7 @@ const Contact = () => {
           target='_blank'
           href='https://www.linkedin.com/in/kevin-hanard-275165a5/'
         >
-          Linkedin Profile
+          LinkedIn Profile
         </a>
       </div>
       <div className='contact'>
