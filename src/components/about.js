@@ -69,7 +69,7 @@ const About = ({ showProjects, setShowProjects, toggleLinks }) => {
               <AiFillFolderOpen />
             </button>
           </div>
-          <h4>
+          <h5>
             If you want to know more about my experience, here is my resume
             <a
               target='_blank'
@@ -77,7 +77,7 @@ const About = ({ showProjects, setShowProjects, toggleLinks }) => {
             >
               <GrDocumentDownload />
             </a>
-          </h4>
+          </h5>
         </div>
         <div className='about-title'>And when I'm not coding?</div>
         <div className='about-text-nonpro'>

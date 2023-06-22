@@ -57,7 +57,7 @@ const skills = [
     id: 10,
     img: require('./imgs/testing.png'),
     title: 'Testing Library',
-    achieve: '50%',
+    achieve: '75%',
   },
   {
     id: 11,
@@ -67,8 +67,20 @@ const skills = [
   },
   {
     id: 12,
+    img: require('./imgs/node.png'),
+    title: 'Node Js',
+    achieve: '75%',
+  },
+  {
+    id: 13,
     img: require('./imgs/aws.png'),
     title: 'AWS',
+    achieve: '30%',
+  },
+  {
+    id: 14,
+    img: require('./imgs/mongo.png'),
+    title: 'MongoDB',
     achieve: '30%',
   },
 ];
