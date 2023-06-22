@@ -662,10 +662,6 @@ nav {
   margin-right: 0;
 }
 
-.res {
-  color: var(--clr-iceberg);
-  color: var(--clr-iceberg);
-}
 .about-btn-project:hover {
   color: var(--clr-iceberg);
 }
@@ -760,6 +756,11 @@ nav {
   width: 18rem;
   height: 4.5rem;
   display: flex;
+  transition: all 0.2s ease-in-out;
+}
+
+.skills-cards:hover {
+  scale: 1.1;
 }
 
 .skills-cards img {
