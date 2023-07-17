@@ -1,7 +1,7 @@
 const projectsData = [
   {
     id: 1,
-    img: require('./imgs/book.jpg'),
+    img: require('./imgs/origami.png'),
     title: 'Origami React App',
     shortTitle: 'Origami',
     desc: 'Project developed to play with SVG animations and share pictures of my origamis',
