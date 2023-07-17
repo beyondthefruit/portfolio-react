@@ -266,7 +266,7 @@ nav {
 
 /* w3school code */
 .tooltip .tooltip-text {
-  /* visibility: hidden; */
+  visibility: hidden;
   font-family: 'Montserrat', sans-serif, 'Playfair Display', serif;
   width: auto;
   min-width: 14rem;
@@ -844,9 +844,9 @@ nav {
     margin-left: 0.8rem;
   }
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 960px) {
   .skills-cards {
-    width: 25rem;
+    width: 24rem;
     height: 5rem;
     display: flex;
   }
