@@ -2,29 +2,26 @@ const projectsData = [
   {
     id: 1,
     img: require('./imgs/book.jpg'),
-    title: 'Book list review React App',
-    shortTitle: 'Book list',
-    desc: 'My first React App, created from scratch. This is my own book list with my own review. I included various functionalities, it is dynamic (star ratings, buttons choice by genres or authors...)',
-    skills: ['React Js', 'HTML', 'CSS', 'Responsive Design', 'Github', 'GIT'],
-    linkWeb: 'https://booklist-app-kevin.netlify.app/',
-    linkGit: 'https://github.com/beyondthefruit/Booklist',
+    title: 'Origami React App',
+    shortTitle: 'Origami',
+    desc: 'Project developed to play with SVG animations and share pictures of my origamis',
+    skills: [
+      'React Js',
+      'styled-components',
+      'Responsive Design',
+      'Github',
+      'GIT',
+      'Testing Library',
+    ],
+    linkWeb: 'https://origami-kevin.netlify.app/',
+    linkGit: 'https://github.com/beyondthefruit/origami',
   },
   {
     id: 2,
-    img: require('./imgs/boc1.jpg'),
-    title: 'Boards of Canada webpage Javascript',
-    shortTitle: 'Boards of Canada',
-    desc: "Probably my favourite music band. I've made a couple of web projects on them since I started my tech journey. Made with Javascript, Buttons are dynamic",
-    skills: ['Javascript', 'HTML', 'CSS', 'Responsive Design', 'Github', 'GIT'],
-    linkWeb: 'https://boc-fanpage-js.netlify.app/',
-    linkGit: 'https://github.com/beyondthefruit/JS-BOC-FANPAGE',
-  },
-  {
-    id: 3,
     img: require('./imgs/playlist.jpg'),
     title: 'Playlist React App',
     shortTitle: 'Playlist',
-    desc: 'Project built in pair programming with a software developer. I used Styled components for this project',
+    desc: 'Project built in pair programming with a software developer to share our favorite songs.',
     skills: [
       'React Js',
       'styled-components',
@@ -35,6 +32,16 @@ const projectsData = [
     ],
     linkWeb: 'https://react-playlist.netlify.app/',
     linkGit: 'https://github.com/julianoiret/playlist-react',
+  },
+  {
+    id: 3,
+    img: require('./imgs/book.jpg'),
+    title: 'Book list review React App',
+    shortTitle: 'Book list',
+    desc: 'My first React App, created from scratch. This is my own book list with my own review. I included various functionalities, it is dynamic (star ratings, buttons choice by genres or authors...)',
+    skills: ['React Js', 'HTML', 'CSS', 'Responsive Design', 'Github', 'GIT'],
+    linkWeb: 'https://booklist-app-kevin.netlify.app/',
+    linkGit: 'https://github.com/beyondthefruit/Booklist',
   },
 
   {
@@ -59,6 +66,17 @@ const projectsData = [
   },
   {
     id: 5,
+    img: require('./imgs/boc1.jpg'),
+    title: 'Boards of Canada webpage Javascript',
+    shortTitle: 'Boards of Canada',
+    desc: "Probably my favourite music band. I've made a couple of web projects on them since I started my tech journey. Made with Javascript, Buttons are dynamic",
+    skills: ['Javascript', 'HTML', 'CSS', 'Responsive Design', 'Github', 'GIT'],
+    linkWeb: 'https://boc-fanpage-js.netlify.app/',
+    linkGit: 'https://github.com/beyondthefruit/JS-BOC-FANPAGE',
+  },
+
+  {
+    id: 6,
     img: require('./imgs/tours.jpg'),
     title: 'Travel tours React',
     shortTitle: 'Tours',
@@ -68,7 +86,7 @@ const projectsData = [
     linkGit: 'https://github.com/beyondthefruit/travel-tours-react',
   },
   {
-    id: 6,
+    id: 7,
     img: require('./imgs/reviews.jpg'),
     title: 'Reviews React',
     shortTitle: 'Reviews',
@@ -78,7 +96,7 @@ const projectsData = [
     linkGit: 'https://github.com/beyondthefruit/reviews-react',
   },
   {
-    id: 7,
+    id: 8,
     img: require('./imgs/menu.jpg'),
     title: 'Restaurant menu React',
     shortTitle: 'Menu',
@@ -88,7 +106,7 @@ const projectsData = [
     linkGit: 'https://github.com/beyondthefruit/menu-react',
   },
   {
-    id: 8,
+    id: 9,
     img: require('./imgs/darkmode.jpg'),
     title: 'Simple dark mode',
     shortTitle: 'Dark mode',
@@ -99,7 +117,7 @@ const projectsData = [
   },
 
   {
-    id: 9,
+    id: 10,
     img: require('./imgs/profile.jpg'),
     title: 'Basic front end challenge',
     shortTitle: 'Profile card',
@@ -109,7 +127,7 @@ const projectsData = [
     linkGit: 'https://github.com/beyondthefruit/social-profile-card-challenge',
   },
   {
-    id: 10,
+    id: 11,
     img: require('./imgs/catstronaut.jpg'),
     title: 'Catstronaut Space Academy',
     shortTitle: 'Catstronaut',
@@ -119,7 +137,7 @@ const projectsData = [
     linkGit: 'https://github.com/beyondthefruit/odyssey-lift-off-part5-server',
   },
   {
-    id: 11,
+    id: 12,
     img: require('./imgs/portfolio.jpg'),
     title: 'Portfolio',
     shortTitle: 'Portfolio',
@@ -129,7 +147,7 @@ const projectsData = [
     linkGit: 'https://github.com/beyondthefruit/portfolio-react',
   },
   {
-    id: 12,
+    id: 13,
     img: require('./imgs/menu.jpg'),
     title: 'Restaurant menu Javascript',
     shortTitle: 'Menu',
