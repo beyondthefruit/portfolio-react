@@ -59,7 +59,9 @@ const Navbar = ({
               >
                 {/* <AiFillFolderOpen /> Projects */}
                 Projects
-                <span class='tooltip-text'>To have a look at my projects</span>
+                <span class='tooltip-text' id='tool-project'>
+                  Discover my projects
+                </span>
               </a>
               <a
                 className={`nav-items btn-profile tooltip ${
@@ -72,7 +74,7 @@ const Navbar = ({
               >
                 <FaHouseUser />
 
-                <span class='tooltip-text'>To return on my website</span>
+                <span class='tooltip-text'>Return on my website</span>
               </a>
             </li>
 
