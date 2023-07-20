@@ -53,6 +53,7 @@ COntact information with link
 
 ### `Media Querries`
 
+@media screen and (min-width: 400px)
 @media screen and (min-width: 650px)
 @media screen and (min-width: 840px)
 @media screen and (min-width: 900px)

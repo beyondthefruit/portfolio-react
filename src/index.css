@@ -404,7 +404,7 @@ nav {
 }
 .project img {
   width: 240px;
-  height: 190px;
+  height: 170px;
   border: var(--clr-nickel) 0.1rem ridge;
   display: block;
   margin: 0.5rem auto 0.4rem auto;
@@ -436,13 +436,13 @@ nav {
 .icon-skills {
   background: var(--clr-bluecolumbia);
   color: var(--clr-black-smokey);
-  font-weight: 400;
+  font-weight: 300;
   border: 1px solid var(--clr-iceberg);
-  box-shadow: 2px 2px 2px 2px var(--clr-blue);
+  box-shadow: 1px 1px 1px 1px var(--clr-blue);
   border-radius: 5px;
   margin: 0.3rem 0.5rem;
-  padding: 0.1rem 0.4rem 0.2rem;
-  height: 1.3rem;
+  padding: 0.1rem 0.4rem 0.3rem;
+  height: 1.2rem;
   letter-spacing: var(--spacing);
 }
 
@@ -468,9 +468,44 @@ nav {
   margin-bottom: 1rem;
 }
 
+@media screen and (min-width: 400px) {
+  .project {
+    width: 20rem;
+    min-height: 30rem;
+    height: auto;
+  }
+
+  .project img {
+    width: 290px;
+    height: 200px;
+  }
+  .project-description {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.5rem;
+    min-height: 80px;
+  }
+  .icon-skills {
+    font-weight: 400;
+  }
+}
+@media screen and (min-width: 650px) {
+  .project {
+    width: 26rem;
+    min-height: 30rem;
+    height: auto;
+  }
+
+  .project img {
+    width: 380px;
+    height: 240px;
+  }
+  .project-description {
+    font-size: 1rem;
+  }
+}
 @media screen and (min-width: 840px) {
   .portfolio-projects {
-    width: 95vw;
+    width: 100vw;
     align-items: center;
     grid-template-columns: 1fr 1fr;
     margin-top: 15rem;
@@ -480,7 +515,7 @@ nav {
     margin: 2rem auto;
     width: 24rem;
 
-    height: 32rem;
+    height: 35rem;
     max-height: auto;
   }
 
@@ -510,7 +545,9 @@ nav {
   }
 
   .project-link {
+    height: 3rem;
     padding-bottom: 1rem;
+    /* margin-top: 0.3rem; */
   }
   .project-link a {
     padding-bottom: 1rem;
@@ -518,7 +555,6 @@ nav {
   }
   .project-link p {
     font-size: 1.1rem;
-
     letter-spacing: 1px;
   }
 }
@@ -839,9 +875,24 @@ nav {
   .skills-cards {
     margin-left: auto;
     margin-right: auto;
+    width: 16rem;
+    transition: all 0.2s ease-in-out;
+  }
+  .rating {
+    width: 150px;
   }
   .skills-cards-info {
     margin-left: 0.8rem;
+  }
+}
+@media screen and (min-width: 840px) {
+  .skills-cards {
+    margin-left: auto;
+    margin-right: auto;
+    width: 18rem;
+  }
+  .rating {
+    width: 180px;
   }
 }
 @media screen and (min-width: 960px) {
@@ -859,6 +910,19 @@ nav {
   }
   .skills {
     scroll-margin-top: 160px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .skills-cards {
+    width: 30rem;
+  }
+
+  .skills-card-title {
+    font-size: 1.2rem;
+  }
+
+  .rating {
+    width: 320px;
   }
 }
 
