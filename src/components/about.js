@@ -8,7 +8,7 @@ import {
   GiMeditation,
 } from 'react-icons/gi';
 import { AiFillFolderOpen } from 'react-icons/ai';
-import { BsBoxArrowRight } from 'react-icons/bs';
+// import { BsBoxArrowRight } from 'react-icons/bs';
 
 import { GrDocumentDownload } from 'react-icons/gr';
 
@@ -56,7 +56,7 @@ const About = ({ showProjects, setShowProjects, toggleLinks }) => {
           </p>
           <div className='about-project-link'>
             <h5>Check my projects here</h5>
-            {/* <BsBoxArrowRight /> */}
+
             <button
               className={`about-btn-project ${
                 showProjects ? 'btn-hide' : 'btn-show'
@@ -73,6 +73,7 @@ const About = ({ showProjects, setShowProjects, toggleLinks }) => {
             If you want to know more about my experience, here is my resume
             <a
               target='_blank'
+              rel='noreferrer'
               href='https://www.canva.com/design/DAFnjTobPFw/VQrxVErADKT6HFZohn-R9A/view?utm_content=DAFnjTobPFw&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink'
             >
               <GrDocumentDownload />

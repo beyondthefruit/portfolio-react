@@ -12,8 +12,8 @@ import './App.css';
 
 function App() {
   const [showProjects, setShowProjects] = useState(false);
-  const [dataSkills, setDataSkills] = useState(skills);
-  const [dataProjects, setDataProjects] = useState(projectsData);
+  const [dataSkills] = useState(skills);
+  const [dataProjects] = useState(projectsData);
   const [showLinks, setShowLinks] = useState(true);
 
   // both these fct are to toggle purposes (projects and links)
