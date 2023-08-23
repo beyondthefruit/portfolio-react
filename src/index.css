@@ -118,7 +118,7 @@ main {
   margin: 0;
   margin-left: auto;
   margin-right: auto;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 main h1 {
   font-size: 2rem;
@@ -779,29 +779,90 @@ nav {
   scroll-margin-top: 68px;
 }
 
+.skills-wrap {
+  /* display: grid; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .skills-title {
   font-weight: 600;
+  width: 100%;
   font-size: 1.6rem;
   text-align: center;
   padding: 2rem;
   letter-spacing: 0.2rem;
+  position: sticky;
+  position: -webkit-sticky;
+  align-self: center;
+  top: 25%;
+  flex: 10;
+  margin: 0 auto;
+  padding-bottom: 13%;
 }
 
-.skills-wrap {
-  display: grid;
-  justify-content: center;
+.sticky {
+  position: sticky;
+  position: -webkit-sticky;
+
+  top: 40%;
 }
 
 /* see with or without border  */
 .skills-cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   /* border: var(--clr-nickel) 0.1rem solid; */
   box-shadow: 4px 4px 6px 3px var(--clr-nickel);
+  background: var(--clr-platinum);
   border-radius: 0.25rem;
   margin: 1rem;
   width: 18rem;
   height: 4.5rem;
   display: flex;
+  flex: 1;
   transition: all 0.2s ease-in-out;
+}
+
+.skills-cards:nth-child(2) {
+  top: 41%;
+}
+.skills-cards:nth-child(3) {
+  top: 42%;
+}
+.skills-cards:nth-child(4) {
+  top: 43%;
+}
+.skills-cards:nth-child(5) {
+  top: 44%;
+}
+.skills-cards:nth-child(6) {
+  top: 45%;
+}
+.skills-cards:nth-child(7) {
+  top: 46%;
+}
+.skills-cards:nth-child(8) {
+  top: 47%;
+}
+.skills-cards:nth-child(9) {
+  top: 48%;
+}
+.skills-cards:nth-child(10) {
+  top: 49%;
+}
+.skills-cards:nth-child(11) {
+  top: 50%;
+}
+.skills-cards:nth-child(12) {
+  top: 51%;
+}
+.skills-cards:nth-child(13) {
+  top: 52%;
+}
+.skills-cards:nth-child(14) {
+  top: 53%;
 }
 
 .skills-cards:hover {
@@ -837,7 +898,7 @@ nav {
   margin-left: 0.2rem;
   font-size: 1rem;
   padding: 0px 0 0.3rem 0.5rem;
-  position: relative;
+  /* position: relative; */
   letter-spacing: var(--spacing);
 }
 .rating {
@@ -886,10 +947,52 @@ nav {
   }
 }
 @media screen and (min-width: 840px) {
+  .sticky {
+    top: 40%;
+  }
   .skills-cards {
     margin-left: auto;
     margin-right: auto;
     width: 18rem;
+  }
+  .skills-cards:nth-child(2) {
+    top: 40%;
+  }
+  .skills-cards:nth-child(3) {
+    top: 41%;
+  }
+  .skills-cards:nth-child(4) {
+    top: 41%;
+  }
+  .skills-cards:nth-child(5) {
+    top: 42%;
+  }
+  .skills-cards:nth-child(6) {
+    top: 42%;
+  }
+  .skills-cards:nth-child(7) {
+    top: 43%;
+  }
+  .skills-cards:nth-child(8) {
+    top: 43%;
+  }
+  .skills-cards:nth-child(9) {
+    top: 44%;
+  }
+  .skills-cards:nth-child(10) {
+    top: 44%;
+  }
+  .skills-cards:nth-child(11) {
+    top: 45%;
+  }
+  .skills-cards:nth-child(12) {
+    top: 45%;
+  }
+  .skills-cards:nth-child(13) {
+    top: 46%;
+  }
+  .skills-cards:nth-child(14) {
+    top: 46%;
   }
   .rating {
     width: 180px;
