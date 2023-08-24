@@ -144,11 +144,6 @@ header {
   font-family: bradley hand, cursive, sans-serif;
   background: var(--clr-platinum-clear);
   border-bottom: 0.05rem solid var(--clr-iceberg);
-  /* border-color: (
-    0.25turn,
-    var(--clr-platinum-clear) 5%,
-    var(--clr-bluecolumbia)
-  ); */
   height: auto;
   width: 100%;
   margin-top: 0;
@@ -185,21 +180,21 @@ header h1 {
 }
 
 header li {
-  padding: 0 2rem;
+  padding: 0.5rem 0.8rem 0 2rem;
 }
 
 /* fix the btns projects and home positioning */
 header li:last-child,
 header li:nth-child(4) {
-  padding: 0 1.3rem;
+  padding: 0 0.8rem 0 1.3rem;
   float: right;
 }
 
 /* hide the nav and trnslate it to show*/
 nav {
   position: absolute;
-  right: 1rem;
-  top: 3rem;
+  right: 2rem;
+  top: 6rem;
   height: 100vh;
   transform: translateX(0);
   overflow: hidden;
@@ -214,8 +209,7 @@ nav {
 }
 /* aply a blur effect when the burger is active */
 .blur-me {
-  right: 1rem;
-  top: 3rem;
+  top: 6rem;
   width: 150vw;
   height: 100%;
   position: fixed;
@@ -232,7 +226,7 @@ nav {
   text-transform: capitalize;
   text-align: end;
   display: block;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.5rem 0 2rem;
   transition: var(--transition);
   letter-spacing: 0.2rem;
 }
@@ -270,8 +264,6 @@ nav {
   font-family: 'Montserrat', sans-serif, 'Playfair Display', serif;
   width: auto;
   min-width: 14rem;
-  /* background-color: var(--clr-bluecolumbia);
-  border: 0.5px solid var(--clr-iceberg); */
   color: var(--clr-black-smokey);
   text-align: center;
   font-size: 0.6rem;
@@ -300,6 +292,19 @@ nav {
 .btn-show {
   display: block;
 }
+@media screen and (min-width: 320px) {
+  nav {
+    top: 3rem;
+    right: 0rem;
+  }
+  .nav-items {
+    padding-right: 1rem;
+  }
+  .blur-me {
+    right: 1rem;
+    top: 3rem;
+  }
+}
 
 @media screen and (min-width: 840px) {
   nav-center {
@@ -321,7 +326,6 @@ nav {
     justify-content: space-evenly;
     text-align: center;
     padding-top: 1rem;
-    /* margin-top: 1rem; */
   }
 
   .nav-toggle {
@@ -351,6 +355,11 @@ nav {
 
   .links a:hover {
     scale: 1.15;
+  }
+
+  #main-icon {
+    position: relative;
+    top: 0.3rem;
   }
 
   .blur-me {
@@ -524,7 +533,7 @@ nav {
     padding: 0.6rem 0 0.6rem 0;
   }
   .project-skills {
-    height: 80px;
+    height: 100px;
   }
 
   .icon-skills {
@@ -535,12 +544,13 @@ nav {
 
   .project-description {
     font-size: 0.9rem;
-    padding: 0.5rem 0.5rem;
+    padding: 0.5rem 0.7rem;
     min-height: 90px;
   }
   .project img {
-    min-width: 320px;
-    min-height: 200px;
+    min-width: 330px;
+    width: 360px;
+    height: 220px;
     margin: 1rem auto 0.9rem auto;
   }
 
@@ -635,8 +645,13 @@ nav {
     width: 300px;
     height: 300px;
     border-radius: 50%;
+    border: 1px solid var(--clr-iceberg);
+    opacity: 85%;
+    transition: var(--transition);
   }
-
+  .presentation img:hover {
+    opacity: 100%;
+  }
   .underline {
     height: 0.3rem;
   }
@@ -793,9 +808,8 @@ nav {
   letter-spacing: 0.2rem;
   position: sticky;
   position: -webkit-sticky;
-  /* align-self: center; */
   top: 25%;
-  padding-bottom: 28%;
+  padding-bottom: 35%;
 }
 
 .sticky {
@@ -808,7 +822,6 @@ nav {
 .skills-cards {
   display: flex;
   align-items: center;
-  justify-content: center;
   /* border: var(--clr-nickel) 0.1rem solid; */
   box-shadow: 4px 4px 6px 3px var(--clr-nickel);
   background: var(--clr-platinum);
@@ -919,6 +932,12 @@ nav {
   margin-left: 0.5rem;
 }
 
+@media screen and (min-width: 320px) {
+  .skills-title {
+    top: 25%;
+    padding-bottom: 28%;
+  }
+}
 @media screen and (min-width: 650px) {
   .skills-wrap {
     display: grid;
@@ -928,8 +947,7 @@ nav {
   }
 
   .skills-cards {
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     width: 16rem;
     transition: all 0.2s ease-in-out;
   }
@@ -953,7 +971,6 @@ nav {
     top: 40%;
   }
   .skills-cards {
-    margin: 0 auto;
     width: 18rem;
   }
   .skills-cards:nth-child(2) {
@@ -1028,6 +1045,9 @@ nav {
   .rating {
     width: 320px;
   }
+  .skills-title {
+    padding-bottom: 10%;
+  }
 }
 
 /* contact/ footer */
@@ -1054,7 +1074,7 @@ nav {
 }
 
 .contact a {
-  font-size: 1rem;
+  font-size: 0.9rem;
   padding: 0.6rem 0 0 1rem;
   /* text-decoration: none; */
   color: var(--clr-charcoal);
@@ -1065,14 +1085,18 @@ nav {
 
 .icons {
   color: var(--clr-iceberg);
-  width: 45px;
-  height: 45px;
+  width: 35px;
+  height: 35px;
   display: block;
   margin-right: 0.5rem;
 }
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 320px) {
   .contact a {
     font-size: 1.1rem;
+  }
+  .icons {
+    width: 45px;
+    height: 45px;
   }
 }
 
