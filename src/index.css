@@ -773,8 +773,7 @@ nav {
 /* skills section */
 .skills {
   margin-top: 5rem;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   width: 90vw;
   scroll-margin-top: 68px;
 }
@@ -794,17 +793,14 @@ nav {
   letter-spacing: 0.2rem;
   position: sticky;
   position: -webkit-sticky;
-  align-self: center;
+  /* align-self: center; */
   top: 25%;
-  flex: 10;
-  margin: 0 auto;
-  padding-bottom: 13%;
+  padding-bottom: 28%;
 }
 
 .sticky {
   position: sticky;
   position: -webkit-sticky;
-
   top: 40%;
 }
 
@@ -820,52 +816,50 @@ nav {
   margin: 1rem;
   width: 18rem;
   height: 4.5rem;
-  display: flex;
-  flex: 1;
   transition: all 0.2s ease-in-out;
 }
 
-.skills-cards:nth-child(2) {
+.sticky:nth-child(2) {
   top: 41%;
 }
-.skills-cards:nth-child(3) {
+.sticky:nth-child(3) {
   top: 42%;
 }
-.skills-cards:nth-child(4) {
+.sticky:nth-child(4) {
   top: 43%;
 }
-.skills-cards:nth-child(5) {
+.sticky:nth-child(5) {
   top: 44%;
 }
-.skills-cards:nth-child(6) {
+.sticky:nth-child(6) {
   top: 45%;
 }
-.skills-cards:nth-child(7) {
+.sticky:nth-child(7) {
   top: 46%;
 }
-.skills-cards:nth-child(8) {
+.sticky:nth-child(8) {
   top: 47%;
 }
-.skills-cards:nth-child(9) {
+.sticky:nth-child(9) {
   top: 48%;
 }
-.skills-cards:nth-child(10) {
+.sticky:nth-child(10) {
   top: 49%;
 }
-.skills-cards:nth-child(11) {
+.sticky:nth-child(11) {
   top: 50%;
 }
-.skills-cards:nth-child(12) {
+.sticky:nth-child(12) {
   top: 51%;
 }
-.skills-cards:nth-child(13) {
+.sticky:nth-child(13) {
   top: 52%;
 }
-.skills-cards:nth-child(14) {
+.sticky:nth-child(14) {
   top: 53%;
 }
 
-.skills-cards:hover {
+.sticky:hover {
   scale: 1.1;
 }
 
@@ -942,17 +936,24 @@ nav {
   .rating {
     width: 150px;
   }
+  .skills-title {
+    padding-bottom: 17%;
+  }
   .skills-cards-info {
     margin-left: 0.8rem;
   }
 }
 @media screen and (min-width: 840px) {
+  .skills-title {
+    top: 25%;
+    padding-bottom: 13%;
+  }
+
   .sticky {
     top: 40%;
   }
   .skills-cards {
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     width: 18rem;
   }
   .skills-cards:nth-child(2) {
@@ -1053,7 +1054,7 @@ nav {
 }
 
 .contact a {
-  font-size: 1.1rem;
+  font-size: 1rem;
   padding: 0.6rem 0 0 1rem;
   /* text-decoration: none; */
   color: var(--clr-charcoal);
@@ -1068,6 +1069,11 @@ nav {
   height: 45px;
   display: block;
   margin-right: 0.5rem;
+}
+@media screen and (min-width: 400px) {
+  .contact a {
+    font-size: 1.1rem;
+  }
 }
 
 @media screen and (min-width: 900px) {
