@@ -18,11 +18,11 @@ const Projects = ({ dataProjects }) => {
               })}
             </div>
             <div className='project-link'>
-              <a target='_blank' href={linkWeb}>
+              <a target='_blank' href={linkWeb} rel='noreferrer'>
                 <FiExternalLink />
               </a>
               <p> {shortTitle}</p>
-              <a target='_blank' href={linkGit}>
+              <a target='_blank' href={linkGit} rel='noreferrer'>
                 <AiOutlineGithub />
               </a>
             </div>

@@ -118,7 +118,7 @@ main {
   margin: 0;
   margin-left: auto;
   margin-right: auto;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 main h1 {
   font-size: 2rem;
@@ -144,11 +144,6 @@ header {
   font-family: bradley hand, cursive, sans-serif;
   background: var(--clr-platinum-clear);
   border-bottom: 0.05rem solid var(--clr-iceberg);
-  /* border-color: (
-    0.25turn,
-    var(--clr-platinum-clear) 5%,
-    var(--clr-bluecolumbia)
-  ); */
   height: auto;
   width: 100%;
   margin-top: 0;
@@ -185,21 +180,21 @@ header h1 {
 }
 
 header li {
-  padding: 0 2rem;
+  padding: 0.5rem 0.8rem 0 2rem;
 }
 
 /* fix the btns projects and home positioning */
 header li:last-child,
 header li:nth-child(4) {
-  padding: 0 1.3rem;
+  padding: 0 0.8rem 0 1.3rem;
   float: right;
 }
 
 /* hide the nav and trnslate it to show*/
 nav {
   position: absolute;
-  right: 1rem;
-  top: 3rem;
+  right: 2rem;
+  top: 6rem;
   height: 100vh;
   transform: translateX(0);
   overflow: hidden;
@@ -214,8 +209,7 @@ nav {
 }
 /* aply a blur effect when the burger is active */
 .blur-me {
-  right: 1rem;
-  top: 3rem;
+  top: 6rem;
   width: 150vw;
   height: 100%;
   position: fixed;
@@ -232,7 +226,7 @@ nav {
   text-transform: capitalize;
   text-align: end;
   display: block;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.5rem 0 2rem;
   transition: var(--transition);
   letter-spacing: 0.2rem;
 }
@@ -270,8 +264,6 @@ nav {
   font-family: 'Montserrat', sans-serif, 'Playfair Display', serif;
   width: auto;
   min-width: 14rem;
-  /* background-color: var(--clr-bluecolumbia);
-  border: 0.5px solid var(--clr-iceberg); */
   color: var(--clr-black-smokey);
   text-align: center;
   font-size: 0.6rem;
@@ -300,6 +292,19 @@ nav {
 .btn-show {
   display: block;
 }
+@media screen and (min-width: 320px) {
+  nav {
+    top: 3rem;
+    right: 0rem;
+  }
+  .nav-items {
+    padding-right: 1rem;
+  }
+  .blur-me {
+    right: 1rem;
+    top: 3rem;
+  }
+}
 
 @media screen and (min-width: 840px) {
   nav-center {
@@ -321,7 +326,6 @@ nav {
     justify-content: space-evenly;
     text-align: center;
     padding-top: 1rem;
-    /* margin-top: 1rem; */
   }
 
   .nav-toggle {
@@ -353,11 +357,21 @@ nav {
     scale: 1.15;
   }
 
+  #main-icon {
+    position: relative;
+    top: 0.3rem;
+  }
+
   .blur-me {
     display: none;
   }
   .tooltip:hover .tooltip-text {
     visibility: visible;
+  }
+  header li:last-child,
+  header li:nth-child(4) {
+    padding: 0.5rem 0.8rem 0 1.3rem;
+    float: right;
   }
 }
 @media screen and (min-width: 1400px) {
@@ -524,7 +538,7 @@ nav {
     padding: 0.6rem 0 0.6rem 0;
   }
   .project-skills {
-    height: 80px;
+    height: 100px;
   }
 
   .icon-skills {
@@ -535,12 +549,13 @@ nav {
 
   .project-description {
     font-size: 0.9rem;
-    padding: 0.5rem 0.5rem;
+    padding: 0.5rem 0.7rem;
     min-height: 90px;
   }
   .project img {
-    min-width: 320px;
-    min-height: 200px;
+    min-width: 330px;
+    width: 360px;
+    height: 220px;
     margin: 1rem auto 0.9rem auto;
   }
 
@@ -635,8 +650,13 @@ nav {
     width: 300px;
     height: 300px;
     border-radius: 50%;
+    border: 1px solid var(--clr-iceberg);
+    opacity: 85%;
+    transition: var(--transition);
   }
-
+  .presentation img:hover {
+    opacity: 100%;
+  }
   .underline {
     height: 0.3rem;
   }
@@ -773,38 +793,91 @@ nav {
 /* skills section */
 .skills {
   margin-top: 5rem;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   width: 90vw;
   scroll-margin-top: 68px;
 }
 
+.skills-wrap {
+  /* display: grid; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .skills-title {
   font-weight: 600;
+  width: 100%;
   font-size: 1.6rem;
   text-align: center;
   padding: 2rem;
   letter-spacing: 0.2rem;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 25%;
+  padding-bottom: 35%;
 }
 
-.skills-wrap {
-  display: grid;
-  justify-content: center;
+.sticky {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 40%;
 }
 
 /* see with or without border  */
 .skills-cards {
+  display: flex;
+  align-items: center;
   /* border: var(--clr-nickel) 0.1rem solid; */
   box-shadow: 4px 4px 6px 3px var(--clr-nickel);
+  background: var(--clr-platinum);
   border-radius: 0.25rem;
   margin: 1rem;
   width: 18rem;
   height: 4.5rem;
-  display: flex;
   transition: all 0.2s ease-in-out;
 }
 
-.skills-cards:hover {
+.sticky:nth-child(2) {
+  top: 41%;
+}
+.sticky:nth-child(3) {
+  top: 42%;
+}
+.sticky:nth-child(4) {
+  top: 43%;
+}
+.sticky:nth-child(5) {
+  top: 44%;
+}
+.sticky:nth-child(6) {
+  top: 45%;
+}
+.sticky:nth-child(7) {
+  top: 46%;
+}
+.sticky:nth-child(8) {
+  top: 47%;
+}
+.sticky:nth-child(9) {
+  top: 48%;
+}
+.sticky:nth-child(10) {
+  top: 49%;
+}
+.sticky:nth-child(11) {
+  top: 50%;
+}
+.sticky:nth-child(12) {
+  top: 51%;
+}
+.sticky:nth-child(13) {
+  top: 52%;
+}
+.sticky:nth-child(14) {
+  top: 53%;
+}
+
+.sticky:hover {
   scale: 1.1;
 }
 
@@ -837,7 +910,7 @@ nav {
   margin-left: 0.2rem;
   font-size: 1rem;
   padding: 0px 0 0.3rem 0.5rem;
-  position: relative;
+  /* position: relative; */
   letter-spacing: var(--spacing);
 }
 .rating {
@@ -864,6 +937,12 @@ nav {
   margin-left: 0.5rem;
 }
 
+@media screen and (min-width: 320px) {
+  .skills-title {
+    top: 25%;
+    padding-bottom: 28%;
+  }
+}
 @media screen and (min-width: 650px) {
   .skills-wrap {
     display: grid;
@@ -873,23 +952,70 @@ nav {
   }
 
   .skills-cards {
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     width: 16rem;
     transition: all 0.2s ease-in-out;
   }
   .rating {
     width: 150px;
   }
+  .skills-title {
+    padding-bottom: 17%;
+  }
   .skills-cards-info {
     margin-left: 0.8rem;
   }
 }
 @media screen and (min-width: 840px) {
+  .skills-title {
+    top: 25%;
+    padding-bottom: 13%;
+  }
+
+  .sticky {
+    top: 40%;
+  }
   .skills-cards {
-    margin-left: auto;
-    margin-right: auto;
     width: 18rem;
+  }
+  .skills-cards:nth-child(2) {
+    top: 40%;
+  }
+  .skills-cards:nth-child(3) {
+    top: 41%;
+  }
+  .skills-cards:nth-child(4) {
+    top: 41%;
+  }
+  .skills-cards:nth-child(5) {
+    top: 42%;
+  }
+  .skills-cards:nth-child(6) {
+    top: 42%;
+  }
+  .skills-cards:nth-child(7) {
+    top: 43%;
+  }
+  .skills-cards:nth-child(8) {
+    top: 43%;
+  }
+  .skills-cards:nth-child(9) {
+    top: 44%;
+  }
+  .skills-cards:nth-child(10) {
+    top: 44%;
+  }
+  .skills-cards:nth-child(11) {
+    top: 45%;
+  }
+  .skills-cards:nth-child(12) {
+    top: 45%;
+  }
+  .skills-cards:nth-child(13) {
+    top: 46%;
+  }
+  .skills-cards:nth-child(14) {
+    top: 46%;
   }
   .rating {
     width: 180px;
@@ -924,6 +1050,9 @@ nav {
   .rating {
     width: 320px;
   }
+  .skills-title {
+    padding-bottom: 10%;
+  }
 }
 
 /* contact/ footer */
@@ -950,7 +1079,7 @@ nav {
 }
 
 .contact a {
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   padding: 0.6rem 0 0 1rem;
   /* text-decoration: none; */
   color: var(--clr-charcoal);
@@ -961,10 +1090,19 @@ nav {
 
 .icons {
   color: var(--clr-iceberg);
-  width: 45px;
-  height: 45px;
+  width: 35px;
+  height: 35px;
   display: block;
   margin-right: 0.5rem;
+}
+@media screen and (min-width: 320px) {
+  .contact a {
+    font-size: 1.1rem;
+  }
+  .icons {
+    width: 45px;
+    height: 45px;
+  }
 }
 
 @media screen and (min-width: 900px) {

@@ -72,7 +72,7 @@ const Navbar = ({
                   toggleLinks();
                 }}
               >
-                <FaHouseUser />
+                <FaHouseUser id='main-icon' />
 
                 <span class='tooltip-text'>Return on my website</span>
               </a>
