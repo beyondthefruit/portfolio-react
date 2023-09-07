@@ -35,6 +35,23 @@ const projectsData = [
   },
   {
     id: 3,
+    img: require('./imgs/catstronauts.png'),
+    title: 'Catstronaut React App',
+    shortTitle: 'Catstronaut',
+    desc: 'Animations and parallax effects using React-Spring library. I wanted a basic project to test some cool parallax effects',
+    skills: [
+      'React Js',
+      'React-SPRING',
+      'CSS',
+      'Responsive Design',
+      'Github',
+      'GIT',
+    ],
+    linkWeb: 'https://catstronaut-saturn-mission.netlify.app/',
+    linkGit: 'https://github.com/beyondthefruit/para-play',
+  },
+  {
+    id: 4,
     img: require('./imgs/book.jpg'),
     title: 'Book list review React App',
     shortTitle: 'Book list',
@@ -45,7 +62,7 @@ const projectsData = [
   },
 
   {
-    id: 4,
+    id: 5,
     img: require('./imgs/blog.png'),
     title: 'Blog list Full Stack Project',
     shortTitle: 'Blog list',
@@ -65,7 +82,7 @@ const projectsData = [
     linkGit: 'https://github.com/beyondthefruit/fullstackopen',
   },
   {
-    id: 5,
+    id: 6,
     img: require('./imgs/boc1.jpg'),
     title: 'Boards of Canada webpage Javascript',
     shortTitle: 'Boards of Canada',
@@ -76,7 +93,7 @@ const projectsData = [
   },
 
   {
-    id: 6,
+    id: 7,
     img: require('./imgs/tours.jpg'),
     title: 'Travel tours React',
     shortTitle: 'Tours',
@@ -86,7 +103,7 @@ const projectsData = [
     linkGit: 'https://github.com/beyondthefruit/travel-tours-react',
   },
   {
-    id: 7,
+    id: 8,
     img: require('./imgs/reviews.jpg'),
     title: 'Reviews React',
     shortTitle: 'Reviews',
@@ -96,7 +113,7 @@ const projectsData = [
     linkGit: 'https://github.com/beyondthefruit/reviews-react',
   },
   {
-    id: 8,
+    id: 9,
     img: require('./imgs/menu.jpg'),
     title: 'Restaurant menu React',
     shortTitle: 'Menu',
@@ -104,16 +121,6 @@ const projectsData = [
     skills: ['React Js', 'HTML', 'CSS', 'Github', 'GIT'],
     linkWeb: 'https://menu-react-beyond.netlify.app/',
     linkGit: 'https://github.com/beyondthefruit/menu-react',
-  },
-  {
-    id: 9,
-    img: require('./imgs/darkmode.jpg'),
-    title: 'Simple dark mode',
-    shortTitle: 'Dark mode',
-    desc: 'Quick project built during my Javascript course',
-    skills: ['Javascript', 'HTML', 'CSS', 'Github', 'GIT'],
-    linkWeb: 'https://js-darkmode-beyond.netlify.app/',
-    linkGit: 'https://github.com/beyondthefruit/JS-darkmode',
   },
 
   {
@@ -155,6 +162,16 @@ const projectsData = [
     skills: ['Javascript', 'HTML', 'CSS', 'Github', 'GIT'],
     linkWeb: 'https://menu-js-beyond.netlify.app/',
     linkGit: 'https://github.com/beyondthefruit/menu-JS',
+  },
+  {
+    id: 14,
+    img: require('./imgs/darkmode.jpg'),
+    title: 'Simple dark mode',
+    shortTitle: 'Dark mode',
+    desc: 'Quick project built during my Javascript course',
+    skills: ['Javascript', 'HTML', 'CSS', 'Github', 'GIT'],
+    linkWeb: 'https://js-darkmode-beyond.netlify.app/',
+    linkGit: 'https://github.com/beyondthefruit/JS-darkmode',
   },
 ];
 export default projectsData;
