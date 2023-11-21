@@ -35,6 +35,16 @@ const projectsData = [
   },
   {
     id: 3,
+    img: require('./imgs/memory.png'),
+    title: 'Mario All Stars Memory Game',
+    shortTitle: 'Memory Game',
+    desc: 'This memory game is based on Mario 3 (from Mario All Stars)',
+    skills: ['React Js', 'CSS', 'Responsive Design', 'Github', 'GIT'],
+    linkWeb: 'https://mario-all-stars-memorygame.netlify.app/',
+    linkGit: 'hhttps://github.com/beyondthefruit/memory-game',
+  },
+  {
+    id: 4,
     img: require('./imgs/catstronauts.png'),
     title: 'Catstronaut React App',
     shortTitle: 'Catstronaut',
@@ -51,7 +61,7 @@ const projectsData = [
     linkGit: 'https://github.com/beyondthefruit/para-play',
   },
   {
-    id: 4,
+    id: 5,
     img: require('./imgs/book.jpg'),
     title: 'Book list review React App',
     shortTitle: 'Book list',
@@ -62,7 +72,7 @@ const projectsData = [
   },
 
   {
-    id: 5,
+    id: 6,
     img: require('./imgs/blog.png'),
     title: 'Blog list Full Stack Project',
     shortTitle: 'Blog list',
@@ -82,7 +92,7 @@ const projectsData = [
     linkGit: 'https://github.com/beyondthefruit/fullstackopen',
   },
   {
-    id: 6,
+    id: 7,
     img: require('./imgs/boc1.jpg'),
     title: 'Boards of Canada webpage Javascript',
     shortTitle: 'Boards of Canada',
@@ -93,7 +103,7 @@ const projectsData = [
   },
 
   {
-    id: 7,
+    id: 8,
     img: require('./imgs/tours.jpg'),
     title: 'Travel tours React',
     shortTitle: 'Tours',
@@ -103,7 +113,7 @@ const projectsData = [
     linkGit: 'https://github.com/beyondthefruit/travel-tours-react',
   },
   {
-    id: 8,
+    id: 9,
     img: require('./imgs/reviews.jpg'),
     title: 'Reviews React',
     shortTitle: 'Reviews',
@@ -113,7 +123,7 @@ const projectsData = [
     linkGit: 'https://github.com/beyondthefruit/reviews-react',
   },
   {
-    id: 9,
+    id: 10,
     img: require('./imgs/menu.jpg'),
     title: 'Restaurant menu React',
     shortTitle: 'Menu',
@@ -124,7 +134,7 @@ const projectsData = [
   },
 
   {
-    id: 10,
+    id: 11,
     img: require('./imgs/profile.jpg'),
     title: 'Basic front end challenge',
     shortTitle: 'Profile card',
@@ -134,7 +144,7 @@ const projectsData = [
     linkGit: 'https://github.com/beyondthefruit/social-profile-card-challenge',
   },
   {
-    id: 11,
+    id: 12,
     img: require('./imgs/catstronaut.jpg'),
     title: 'Catstronaut Space Academy',
     shortTitle: 'Catstronaut',
@@ -144,7 +154,7 @@ const projectsData = [
     linkGit: 'https://github.com/beyondthefruit/odyssey-lift-off-part5-server',
   },
   {
-    id: 12,
+    id: 13,
     img: require('./imgs/portfolio.jpg'),
     title: 'Portfolio',
     shortTitle: 'Portfolio',
@@ -154,7 +164,7 @@ const projectsData = [
     linkGit: 'https://github.com/beyondthefruit/portfolio-react',
   },
   {
-    id: 13,
+    id: 14,
     img: require('./imgs/menu.jpg'),
     title: 'Restaurant menu Javascript',
     shortTitle: 'Menu',
@@ -164,7 +174,7 @@ const projectsData = [
     linkGit: 'https://github.com/beyondthefruit/menu-JS',
   },
   {
-    id: 14,
+    id: 15,
     img: require('./imgs/darkmode.jpg'),
     title: 'Simple dark mode',
     shortTitle: 'Dark mode',
